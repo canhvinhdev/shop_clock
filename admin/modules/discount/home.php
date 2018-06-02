@@ -1,0 +1,19 @@
+<?php
+$type=$_GET['type'];
+
+if($type=="list"){
+	include("modules/discount/list.php");
+}
+if($type=="add"){
+	include("modules/discount/add.php");
+}		
+if($type=="edit"){
+	include("modules/discount/edit.php");
+}		
+if($type=="delete"){
+	include("modules/discount/delete.php");
+}
+if($type=="discount_product"){
+	include("modules/discount/discount_product.php");
+}
+?>

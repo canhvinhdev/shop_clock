@@ -1,0 +1,30 @@
+30.11.2017 08:14:45 <!-- sql=[insert into category(Category_Name, Parent_id) values ('aaa', 'â ')] --> 
+30.11.2017 08:15:13 <!-- sql=[insert into category(Category_Name, Parent_id) values ('aaa', 'â ')] --> 
+30.11.2017 08:15:42 <!-- sql=[insert into category(Category_Name, Parent_id) values ('777', 'aa ')] --> 
+30.11.2017 08:15:59 <!-- sql=[insert into category(Category_Name, Parent_id) values ('777', 'aa ')] --> 
+30.11.2017 08:16:24 <!-- sql=[insert into category(Category_Name, Parent_id) values ('aa', 'â ')] --> 
+30.11.2017 08:16:54 <!-- sql=[insert into category(Category_Name, Parent_id) values ('55', '5 ')] --> 
+30.11.2017 08:18:26 <!-- sql=[insert into category(Category_Name, Parent_id) values ('33', '33 ')] --> 
+30.11.2017 08:31:00 <!-- sql=[update category set Category_name = 'Hoa theo thể loại', Parent_id = '3' where ID = ''] --> 
+30.11.2017 08:31:13 <!-- sql=[update category set Category_name = 'Hoa theo thể loại', Parent_id = '2' where ID = ''] --> 
+30.11.2017 08:31:47 <!-- sql=[update category set Category_name = 'Hoa cao cấp', Parent_id = '1' where ID = ''] --> 
+30.11.2017 08:33:38 <!-- sql=[update category set Category_name = 'Hoa cao cấp', Parent_id = '1' where ID = ''] --> 
+13.12.2017 05:58:28 sql=[select * from slider where ID = 1] 
+13.12.2017 05:58:34 sql=[select * from slider where ID = 3] 
+13.12.2017 05:59:10 sql=[select * from slider where ID = 1] 
+13.12.2017 05:59:33 sql=[select * from slider where ID = 1] 
+13.12.2017 05:59:37 sql=[select * from slider where ID = 1] 
+13.12.2017 05:59:37 <!-- sql=[update slider set Title = 'Tin Aâ', Image = 'uploads/banner1.png', Url = '/a',Content = 'Slide 1' where ID = '1' ] --> 
+13.12.2017 06:00:18 sql=[select * from slider where ID = 1] 
+13.12.2017 06:00:18 <!-- sql=[update slider set Title = 'Tin Aâaaa', Image = 'uploads/banner1.png', Url = '/a',Content = 'Slide 1' where ID = '1' ] --> 
+13.12.2017 06:00:30 sql=[select * from slider where ID = 3] 
+13.12.2017 06:00:30 <!-- sql=[update slider set Title = 'Tin Cgggg', Image = 'uploads/banner1.png', Url = '/a',Content = 'Slide 3' where ID = '3' ] --> 
+13.12.2017 06:01:14 sql=[select * from slider where ID = 1] 
+13.12.2017 06:01:14 <!-- sql=[update slider set Title = 'Tin Aâaaa', Image = 'uploads/sl2-1513141274.png', Url = '/a',Content = 'Slide 1' where ID = '1' ] --> 
+13.12.2017 08:03:57 sql=[select * from slider where ID = 1] 
+13.12.2017 08:03:57 <!-- sql=[update slider set Title = 'Tin Aâaaa', Image = 'uploads/sl2-1513141274.png', Url = '/b',Content = 'Slide 1' where ID = '1' ] --> 
+13.12.2017 08:04:44 sql=[select * from slider where ID = 4] 
+13.12.2017 08:04:44 <!-- sql=[update slider set Title = 'Tin D', Image = 'uploads/banner1.png', Url = '/aa',Content = 'Slide 4' where ID = '4' ] --> 
+20.12.2017 12:59:08 sql=[select * from slider where ID = 1] 
+20.12.2017 12:59:08 <!-- sql=[update slider set Title = 'Tin Aâaaa', Image = 'uploads/home_collection_banner4_1-1513771148.png', Url = '/b',Content = 'Slide 1' where ID = '1' ] --> 
+20.12.2017 12:59:55 sql=[select * from slider where ID = 1] 
