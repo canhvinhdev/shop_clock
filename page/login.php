@@ -51,7 +51,7 @@ echo"<div class='container' style='padding-top: 20px'> <div class='label-success
 
 ?>
 
-<script language="javascript">alert("Bạn đã đăng nhập thành công");window.location="../shopbanhoa/index.php?page=homeuser";
+<script language="javascript">alert("Bạn đã đăng nhập thành công");window.location="/index.php?page=homeuser";
             </script>';
 
 <?php

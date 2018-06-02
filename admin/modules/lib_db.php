@@ -32,7 +32,7 @@ function connect(){
 	if (!$link) {
 	    die('<br/>Khong ket noi duoc: ' . mysqli_error());
 	}	
-	mysqli_select_db($link,'shophoa') or die('Could not select database.');
+	mysqli_select_db($link,'shop_clock') or die('Could not select database.');
 	mysqli_query($link,"SET NAMES 'utf8'");
 }
 

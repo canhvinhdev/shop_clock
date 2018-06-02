@@ -79,7 +79,7 @@ $validate_email = '#^[a-z][a-z0-9\._]{2,31}@[a-z0-9\-]{3,}(\.[a-z]{2,4}){1,2}$#'
             ?>
 
             <script language="javascript">alert("Bạn đã đăng ký thành công");
-           	window.location="../shopbanhoa/index.php?page=login";
+           	window.location="/index.php?page=login";
             </script>';
             <?php
         }
@@ -95,7 +95,7 @@ $validate_email = '#^[a-z][a-z0-9\._]{2,31}@[a-z0-9\-]{3,}(\.[a-z]{2,4}){1,2}$#'
 	<div class="row">
 		<ol class="breadcrumb">
 			<li>
-				<a href="/shopbanhoa">Trang chủ</a>
+				<a href="/">Trang chủ</a>
 			</li>
 
 

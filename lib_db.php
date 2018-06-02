@@ -32,7 +32,7 @@ function connect(){
 	if (!$link) {
 	    die('<br/>Khong ket noi duoc: ' . mysqli_error());
 	}	
-	mysqli_select_db($link,'shopbanhoa') or die('Could not select database.');
+	mysqli_select_db($link,'shop_clock') or die('Could not select database.');
 	mysqli_query($link,"SET NAMES 'utf8'");
 }
 
@@ -73,6 +73,7 @@ function exec_select($sql){
 		$i = 1;
 		//lay tung dong ket qua
 		//while( $row = mysqli_fetch_array($res,MYSQL_ASSOC) )
+		$ret = array();
 		while( $row = $res->fetch_array(MYSQLI_ASSOC) )
 		{				
 			$ret[]= $row ;

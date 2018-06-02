@@ -89,8 +89,8 @@ $a = checkLoggedAdmin();
 
 						<li><a href="?page=contact&type=list"><i class="glyphicon glyphicon-earphone"></i>Khách hàng liên hệ</a></li>
 
-					<!-- 	<li><a href="?page=about&type=edit"><i class="glyphicon glyphicon-cog"></i> Cấu hình cho shop</a></li>
- -->
+					 	<li><a href="?page=about&type=edit"><i class="glyphicon glyphicon-cog"></i> Cấu hình cho shop</a></li>
+
 
 
 					</ul>

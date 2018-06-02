@@ -258,7 +258,7 @@ hr{
 	color: #000000
 }
 .li_lv1 a{
-	color: #ffffff
+	color: #ffffff !important;
 }
 .panel-body{
 	padding: 0px 
@@ -361,9 +361,7 @@ ul.breadcrum li{
 	
 	position: relative;
 }
-.main-menu ul li.li_lv1:first-child a{
-	    padding-left: 0px;
-}
+
 .search-bttn{
 	border: none !important;
 	    width: 50px;
@@ -391,6 +389,13 @@ padding: 0px 36px;
 .main-menu>ul>li:hover{
 	 color: #FFF200;
     border-bottom: 4px solid #2E62C0;
+}
+
+
+.main-menu ul li a{
+
+color: #fff !important;
+
 }
 .main-menu ul li a:hover{
 	color:#F90;

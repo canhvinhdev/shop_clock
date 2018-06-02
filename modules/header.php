@@ -4,10 +4,17 @@ session_start();
 
 <?php 
 $user = getLoggedUser();
+if(!isset($user)){
+	$user_id = $user['ID'];
+	$sql2 = "select * from users where ID = $user_id";
+	$user_login = select_one($sql2);
+}
+if(isset($_SESSION['cart'])){
+	$total = sizeof($_SESSION['cart']);
+}else{
+	$total = 0;
+}
 
-$user_id = $user['ID'];
-$sql2 = "select * from users where ID = $user_id";
-$user_login = select_one($sql2);
 
 ?>
 <header>
@@ -16,7 +23,7 @@ $user_login = select_one($sql2);
 			<div class="row flex" >
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div id="logo">
-						<a href="/"><img src="images/logo_footer.png" class="img-responsive" alt=""></a>
+						<a href="#"><img src="images/logo_footer.png" class="img-responsive" alt=""></a>
 					</div>
 
 				</div>
@@ -37,7 +44,7 @@ $user_login = select_one($sql2);
 					<a href="?page=register"> <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></a>
 
 					<a href="?page=cart"> <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
-							(0) Sản phẩm
+							(<?php echo $total;?>) Sản phẩm
 					</a>
 				</div>
 			</div>
@@ -187,7 +194,7 @@ $user_login = select_one($sql2);
 						<?php 
 						if ($user) {			
 							?>
-							<li class="li_lv1"><a href="?page=homeuser">Xin chào <?php echo $user_login['User_Name'] ?></a></li>
+							<li class="li_lv1"><a href="?page=homeuser">Xin chào <?php echo $user['User_Name'] ?></a></li>
 							<li class="li_lv1"><a href="?page=logout">Đăng xuất</a></li>
 
 						<?php }else { ?>

@@ -55,3 +55,4 @@
 <b>Notice</b>:  Undefined index: id in <b>H:\xampp\htdocs\shopbanhoa\page\settinguser.php</b> on line <b>44</b><br />
 '] --> 
 28.12.2017 10:27:58 <!-- sql=[insert into users(User_Name, Password, DOB, Sex,Address, Email, Moblie_Number, Status , Permission, Registed_Date) values ('aaaa', 'cfcd208495d565ef66e7dff9f98764da','2017-12-11', '0', 'HN' ,'admiqqnw@gmail.com', '0877777', '1','0', '2017-12-28 22:27:58')] --> 
+02.06.2018 11:47:15 <!-- sql=[insert into users(User_Name, Password, DOB, Sex,Address, Email, Moblie_Number, Status , Permission, Registed_Date) values ('đâ', 'cfcd208495d565ef66e7dff9f98764da','0', '0', 'đá' ,'qda@gmalcom', '09999999', '1','0', '2018-06-02 11:47:15')] --> 
