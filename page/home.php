@@ -222,7 +222,7 @@ $slider_4 = select_one($slider_4);
 						</h2>
 					</div>
 					<?php 
-					$sql_new = "SELECT pr.* FROM product pr , detail_order de, `order` ord where pr.ID =de.Product_ID and de.Order_ID = ord.ID and pr.Status = 1 and ord.Order_Status = 1 ORDER BY id DESC LIMIT 10";
+					$sql_new = "SELECT pr.* FROM product pr , detail_order de, `order` ord where pr.ID =de.Product_ID and de.Order_ID = ord.ID and pr.Status = 1 and ord.Order_Status = 1 ORDER BY id DESC LIMIT 10	";
 			   		 //echo $sqlMNs;exit();
 					$sql_new =  select_list($sql_new);
 					?>

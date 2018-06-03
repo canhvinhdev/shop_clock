@@ -1,0 +1,163 @@
+03.06.2018 12:26:36 <!-- sql=[insert into discount(Discount, Attach_Discount,Start_Time, End_Time) values ('', ' ','', '')] --> 
+03.06.2018 12:26:36 <!-- sql=[insert into discount(Discount, Attach_Discount,Start_Time, End_Time) values ('', ' ','', '')] --> 
+03.06.2018 12:34:26 <!-- sql=[insert into order(Name, Moblie_Number,Shipping_Address, Order_Status, Method_Payment) values ('aaa', 'aaaa ','aa', 1, 1)] --> 
+03.06.2018 12:34:59 <!-- sql=[insert into order(Name, Moblie_Number,Shipping_Address) values ('aaa', 'aaa ','aa')] --> 
+03.06.2018 12:38:10 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address) values ('', ' ','')] --> 
+03.06.2018 12:38:20 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address) values ('adad', 'ada ','aaa')] --> 
+03.06.2018 12:39:20 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address) values ('adad', 'ada ','aaa')] --> 
+03.06.2018 12:42:00 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address) values ('adad', 'adatrtrtrt ','aaart')] --> 
+03.06.2018 12:44:08 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address) values ('adad', 'adatrtrtrt ','aaart')] --> 
+03.06.2018 12:44:23 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address) values ('ssdasda', 'dadad ','dadad')] --> 
+03.06.2018 12:44:47 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address) values ('dada', 'dad ','adda')] --> 
+03.06.2018 12:58:07 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time) values ('1', '1 ','1', Date)] --> 
+03.06.2018 12:58:16 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time) values ('1', '1 ','1', Date)] --> 
+03.06.2018 12:59:30 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time) values ('1', '1 ','1', curdate())] --> 
+03.06.2018 01:13:27 sql=[select * from product where id = $id_product] 
+03.06.2018 01:13:27 Khong the select duoc,ERROR=[Unknown column '$id_product' in 'where clause'] 
+03.06.2018 01:13:27 COUNT=[0] 
+03.06.2018 01:13:27 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID =  ] 
+03.06.2018 01:13:27 Khong the select duoc,ERROR=[You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1] 
+03.06.2018 01:13:27 COUNT=[0] 
+03.06.2018 01:13:27 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '1 ','1', curdate(),0)] --> 
+03.06.2018 01:17:30 sql=[select * from product where id = $id_product] 
+03.06.2018 01:17:30 Khong the select duoc,ERROR=[Unknown column '$id_product' in 'where clause'] 
+03.06.2018 01:17:30 COUNT=[0] 
+03.06.2018 01:17:30 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID =  ] 
+03.06.2018 01:17:30 Khong the select duoc,ERROR=[You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1] 
+03.06.2018 01:17:30 COUNT=[0] 
+03.06.2018 01:18:54 sql=[select * from product where id = $id_product] 
+03.06.2018 01:18:54 Khong the select duoc,ERROR=[Unknown column '$id_product' in 'where clause'] 
+03.06.2018 01:18:54 COUNT=[0] 
+03.06.2018 01:19:50 sql=[select * from product where ID = $id_product] 
+03.06.2018 01:19:50 Khong the select duoc,ERROR=[Unknown column '$id_product' in 'where clause'] 
+03.06.2018 01:19:50 COUNT=[0] 
+03.06.2018 01:20:26 sql=[select * from product where ID = $id_product] 
+03.06.2018 01:20:26 Khong the select duoc,ERROR=[Unknown column '$id_product' in 'where clause'] 
+03.06.2018 01:20:26 COUNT=[0] 
+03.06.2018 01:23:53 sql=[select * from product where ID = $id_product] 
+03.06.2018 01:23:53 Khong the select duoc,ERROR=[Unknown column '$id_product' in 'where clause'] 
+03.06.2018 01:23:53 COUNT=[0] 
+03.06.2018 01:23:53 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID =  ] 
+03.06.2018 01:23:53 Khong the select duoc,ERROR=[You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1] 
+03.06.2018 01:23:53 COUNT=[0] 
+03.06.2018 01:25:03 sql=[select * from product where ID = 5] 
+03.06.2018 01:25:03 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 5 ] 
+03.06.2018 01:26:02 sql=[select * from product where ID = 1] 
+03.06.2018 01:26:02 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:26:02 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '1 ','1', curdate(),2300000)] --> 
+03.06.2018 01:26:43 sql=[select * from product where ID = 1] 
+03.06.2018 01:26:43 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:26:43 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '1 ','1', curdate(),4600000)] --> 
+03.06.2018 01:27:14 sql=[select * from product where ID = 2] 
+03.06.2018 01:27:14 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 2 ] 
+03.06.2018 01:27:14 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '1 ','1', curdate(),720000)] --> 
+03.06.2018 01:28:57 sql=[select * from product where ID = 2] 
+03.06.2018 01:28:57 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 2 ] 
+03.06.2018 01:28:57 sql=[select * from product where ID = 1] 
+03.06.2018 01:28:57 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:28:57 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '1 ','1', curdate(),3020000)] --> 
+03.06.2018 01:44:13 sql=[select * from product where ID = 3] 
+03.06.2018 01:44:13 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 3 ] 
+03.06.2018 01:44:13 sql=[select * from product where ID = 2] 
+03.06.2018 01:44:13 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 2 ] 
+03.06.2018 01:44:13 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),3086000)] --> 
+03.06.2018 01:44:14 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:44:14 sql=[select * from product where ID = 3] 
+03.06.2018 01:44:14 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 3 ] 
+03.06.2018 01:44:14 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '3','' ,'', '2366000')] --> 
+03.06.2018 01:44:14 sql=[select * from product where ID = 2] 
+03.06.2018 01:44:14 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 2 ] 
+03.06.2018 01:44:14 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '2','' ,'', '720000')] --> 
+03.06.2018 01:45:01 sql=[select * from product where ID = 1] 
+03.06.2018 01:45:01 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:45:01 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),2300000)] --> 
+03.06.2018 01:45:01 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:45:01 sql=[select * from product where ID = 1] 
+03.06.2018 01:45:01 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:45:01 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','' ,'', '2300000')] --> 
+03.06.2018 01:45:07 sql=[select * from product where ID = 1] 
+03.06.2018 01:45:07 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:45:07 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('22', '22 ','22', curdate(),2300000)] --> 
+03.06.2018 01:45:07 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:45:07 sql=[select * from product where ID = 1] 
+03.06.2018 01:45:07 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:45:07 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','' ,'', '2300000')] --> 
+03.06.2018 01:47:43 sql=[select * from product where ID = 1] 
+03.06.2018 01:47:43 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:47:43 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),2300000)] --> 
+03.06.2018 01:47:43 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:47:43 sql=[select * from product where ID = 1] 
+03.06.2018 01:47:43 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:47:43 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','' ,'1', '2300000')] --> 
+03.06.2018 01:47:48 sql=[select * from product where ID = 1] 
+03.06.2018 01:47:48 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:47:48 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('www', 'www ','www', curdate(),2300000)] --> 
+03.06.2018 01:47:48 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:47:48 sql=[select * from product where ID = 1] 
+03.06.2018 01:47:48 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:47:48 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','' ,'1', '2300000')] --> 
+03.06.2018 01:48:10 sql=[select * from product where ID = 1] 
+03.06.2018 01:48:10 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:48:10 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),2300000)] --> 
+03.06.2018 01:48:10 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:48:10 sql=[select * from product where ID = 1] 
+03.06.2018 01:48:10 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:48:10 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','HOA KHAI TRƯƠNG 2 TẦNG - HT06' ,'1', '2300000')] --> 
+03.06.2018 01:48:37 sql=[select * from product where ID = 1] 
+03.06.2018 01:48:37 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:48:37 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),2300000)] --> 
+03.06.2018 01:48:37 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:48:37 sql=[select * from product where ID = 1] 
+03.06.2018 01:48:37 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:48:37 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','HOA KHAI TRƯƠNG 2 TẦNG - HT06' ,'1', '2300000')] --> 
+03.06.2018 01:49:02 sql=[select * from product where ID = 1] 
+03.06.2018 01:49:02 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:49:02 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('d', 'd ','d', curdate(),2300000)] --> 
+03.06.2018 01:49:02 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:49:02 sql=[select * from product where ID = 1] 
+03.06.2018 01:49:02 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:49:02 <!-- sql=[insert into detail_order(Order_IDIndex, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','HOA KHAI TRƯƠNG 2 TẦNG - HT06' ,'1', '2300000')] --> 
+03.06.2018 01:50:18 sql=[select * from product where ID = 1] 
+03.06.2018 01:50:18 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:50:18 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('qq', 'qqq ','q', curdate(),2300000)] --> 
+03.06.2018 01:50:18 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:50:18 sql=[select * from product where ID = 1] 
+03.06.2018 01:50:18 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:50:18 <!-- sql=[insert into detail_order(Order_ID, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','HOA KHAI TRƯƠNG 2 TẦNG - HT06' ,'1', '2300000')] --> 
+03.06.2018 01:52:26 sql=[select * from product where ID = 1] 
+03.06.2018 01:52:26 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:52:26 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('www', 'www ','www', curdate(),2300000)] --> 
+03.06.2018 01:52:26 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:52:26 sql=[select * from product where ID = 1] 
+03.06.2018 01:52:26 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:52:26 <!-- sql=[insert into detail_order(Order_ID, Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ('', '1','HOA KHAI TRƯƠNG 2 TẦNG - HT06' ,'1', '2300000')] --> 
+03.06.2018 01:52:59 sql=[select * from product where ID = 1] 
+03.06.2018 01:52:59 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:52:59 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('sdd', 'dddd ','ddd', curdate(),2300000)] --> 
+03.06.2018 01:52:59 sql=[select * from `order` order by ID desc] 
+03.06.2018 01:52:59 sql=[select * from product where ID = 1] 
+03.06.2018 01:52:59 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:53:55 sql=[select * from product where ID = 1] 
+03.06.2018 01:53:55 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 01:53:55 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('ss', 'sss ','ss', curdate(),2300000)] --> 
+03.06.2018 01:53:55 sql=[select * from `order` order by ID desc] 
+03.06.2018 02:04:03 sql=[select * from product where ID = 1] 
+03.06.2018 02:04:03 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 02:04:03 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '1 ','1', curdate(),2300000)] --> 
+03.06.2018 02:04:04 sql=[select * from `order` order by ID desc] 
+03.06.2018 02:04:04 sql=[select * from product where ID = 1] 
+03.06.2018 02:04:04 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 1 ] 
+03.06.2018 02:05:51 sql=[select * from product where ID = 5] 
+03.06.2018 02:05:51 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 5 ] 
+03.06.2018 02:05:51 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '1 ','1', curdate(),4500000)] --> 
+03.06.2018 02:05:52 sql=[select * from `order` order by ID desc] 
+03.06.2018 02:05:52 sql=[select * from product where ID = 5] 
+03.06.2018 02:05:52 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 5 ] 
+03.06.2018 02:08:06 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),0)] --> 
+03.06.2018 02:08:06 sql=[select * from `order` order by ID desc] 
+03.06.2018 02:08:14 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),0)] --> 
+03.06.2018 02:08:14 sql=[select * from `order` order by ID desc] 
+03.06.2018 02:08:17 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),0)] --> 
+03.06.2018 02:08:17 sql=[select * from `order` order by ID desc] 
+03.06.2018 02:08:56 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('', ' ','', curdate(),0)] --> 
+03.06.2018 02:08:57 sql=[select * from `order` order by ID desc] 

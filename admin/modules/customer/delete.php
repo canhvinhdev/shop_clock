@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 	$id = isset($_REQUEST['id']) ? $_REQUEST['id'] : '';
 	$sqldelC = "update users set Status = 0 where ID = $id";

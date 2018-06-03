@@ -44,7 +44,7 @@ function close(){
 	}
 }
 function select_one($sql){
-	$data = exec_select($sql);
+	$data =($sql);
 	if (!$data) return null;
 	return $data[0];
 }
