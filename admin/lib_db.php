@@ -24,7 +24,7 @@ function data_to_sql_insert($tbl,$data){
 }
 function logDebug($mess){
 	error_log( date('d.m.Y h:i:s') . " $mess \n", 3, "log.log");
-}
+} 
 function connect(){
 	global $link;
 	if ($link) return 0;
