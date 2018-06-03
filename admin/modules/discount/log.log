@@ -50,3 +50,40 @@
 03.06.2018 11:25:07 sql=[ select discountproduct.Product_ID,discountproduct.Discount_ID,discount.* from discountproduct,discount where discountproduct.Discount_ID = 1] 
 03.06.2018 11:25:07 <!-- sql=[insert into discountproduct(Product_ID, Discount_ID,Number_Discount) values (3,1,5)] --> 
 03.06.2018 11:25:18 <!-- sql=[delete from discountproduct where ID = 33] --> 
+03.06.2018 02:52:08 sql=[Select * from product where ID =1] 
+03.06.2018 02:54:20 sql=[Select * from product where ID =1] 
+03.06.2018 02:55:09 sql=[Select * from product where ID =1] 
+03.06.2018 03:03:36 sql=[Select * from product where ID =1] 
+03.06.2018 03:07:06 sql=[Select * from product where ID =1] 
+03.06.2018 03:07:47 sql=[Select * from product where ID =3] 
+03.06.2018 03:08:24 sql=[Select * from product where ID =1] 
+03.06.2018 03:08:55 sql=[Select * from product where ID =1] 
+03.06.2018 03:08:56 sql=[Select * from product where ID =1] 
+03.06.2018 03:08:56 sql=[Select * from product where ID =3] 
+03.06.2018 03:09:12 sql=[Select * from product where ID =1] 
+03.06.2018 03:09:12 sql=[Select * from product where ID =2] 
+03.06.2018 03:09:12 sql=[Select * from product where ID =3] 
+03.06.2018 03:09:13 sql=[Select * from product where ID =1] 
+03.06.2018 03:09:13 sql=[Select * from product where ID =2] 
+03.06.2018 03:09:13 sql=[Select * from product where ID =3] 
+03.06.2018 03:09:13 sql=[Select * from product where ID =5] 
+03.06.2018 03:09:55 sql=[Select * from product where ID =3] 
+03.06.2018 03:11:15 sql=[Select * from product where ID =3] 
+03.06.2018 03:11:16 sql=[ select discountproduct.Product_ID,discountproduct.Discount_ID,discount.* from discountproduct,discount where discountproduct.Discount_ID = 1] 
+03.06.2018 03:11:17 <!-- sql=[insert into discountproduct(Product_ID, Discount_ID,Number_Discount) values (3,1,)] --> 
+03.06.2018 03:11:25 sql=[Select * from product where ID =1] 
+03.06.2018 03:11:26 sql=[ select discountproduct.Product_ID,discountproduct.Discount_ID,discount.* from discountproduct,discount where discountproduct.Discount_ID = 1] 
+03.06.2018 03:11:26 <!-- sql=[insert into discountproduct(Product_ID, Discount_ID,Number_Discount) values (1,1,)] --> 
+03.06.2018 03:11:32 sql=[Select * from product where ID =1] 
+03.06.2018 03:12:12 sql=[Select * from product where ID =3] 
+03.06.2018 03:12:13 sql=[ select discountproduct.Product_ID,discountproduct.Discount_ID,discount.* from discountproduct,discount where discountproduct.Discount_ID = 1] 
+03.06.2018 03:12:13 <!-- sql=[insert into discountproduct(Product_ID, Discount_ID,Number_Discount) values (3,1,)] --> 
+03.06.2018 03:12:19 sql=[Select * from product where ID =3] 
+03.06.2018 03:12:20 sql=[ select discountproduct.Product_ID,discountproduct.Discount_ID,discount.* from discountproduct,discount where discountproduct.Discount_ID = 1] 
+03.06.2018 03:12:20 <!-- sql=[insert into discountproduct(Product_ID, Discount_ID,Number_Discount) values (3,1,)] --> 
+03.06.2018 03:13:01 sql=[Select * from product where ID =3] 
+03.06.2018 03:13:25 sql=[Select * from product where ID =3] 
+03.06.2018 03:13:54 sql=[Select * from product where ID =3] 
+03.06.2018 03:15:42 sql=[Select * from product where ID =3] 
+03.06.2018 03:16:11 sql=[ select discountproduct.Product_ID,discountproduct.Discount_ID,discount.* from discountproduct,discount where discountproduct.Discount_ID = 1] 
+03.06.2018 03:16:11 <!-- sql=[insert into discountproduct(Product_ID, Discount_ID,Number_Discount) values (3,1,1)] --> 

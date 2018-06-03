@@ -124,7 +124,7 @@ $result = select_list($sql_search);
 													<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">Xem chi tiết</a></button>
 												</div>
 												<div  class="viewmore text-center">
-													<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">THÊM VÀO GIỎ</a></button>
+													<button type="button" class="btn btn-success"><a href="page/cart/addtocart.php?id=<?php echo $datas['ID'] ?>">THÊM VÀO GIỎ</a></button>
 												</div>
 
 

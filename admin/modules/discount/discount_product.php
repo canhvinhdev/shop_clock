@@ -2,14 +2,16 @@
 
 <?php 
 $id = isset($_GET['id']) ? $_GET['id'] : '';
+
 $sql_km= "select * from discount where ID = $id ";
+
 $data_km = select_one($sql_km);
 $id_km = $data_km['ID'];
 $name_discount = $data_km['Discount'];
 
 // var_dump($id_km);
 ?>
-<script type="text/javascript" language="javascript" src="modules/ckeditor/ckeditor.js" ></script>
+
 <!-- Topbar -->
 
 <!-- /Topbar -->
@@ -132,7 +134,7 @@ $data_dssp = select_list($sql_dssp);
   </form>
 
 </div>
-<script src="assets/js/jquery/jquery-1.11.3.min.js"></script>
+
 <script  type="text/javascript" charset="utf-8" async defer>
   $(document).ready(function(){
     $('.radio_height').change(function(e) {
@@ -159,7 +161,7 @@ $data_dssp = select_list($sql_dssp);
 
       if($('input[name="sp[]"]:checked').length > 0)
       {
-
+        $check = false;
 
         var data2=[];
         var id_km = "<?php echo $id_km ?>";
@@ -170,13 +172,24 @@ $data_dssp = select_list($sql_dssp);
           var id = id_dh.val();
           var km_dk = $(this).parents('.kmsp_tien').find('#km_di_kem');
           var km_dk_new = km_dk.val();
+          console.log(km_tien_new);
+          // if(km_tien_new == undefined){
+          //   console.log(km_tien_new);
+          //     alert("bạn chưa nhập phần trăm giảm giá");
+          //     $check = true;
+          //     return;
+            
+          // }
                //id.push(this.value);//
 
                var item =  {id_km:id_km,id:id,km_dk:km_dk_new,km_tien:km_tien_new};
                console.log(id);
                data2.push(item);
                console.log(data2);
-             });
+         });
+            if($check == true){
+              return; 
+            }
         $.ajax({
           url:'modules/discount/add_pro_exe.php',
           type:'POST',

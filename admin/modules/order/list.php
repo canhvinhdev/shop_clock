@@ -7,7 +7,7 @@ $sql="SELECT * FROM `order` where Status = 1  order by ID DESC";
 $data_order = select_list($sql);
 
 ?>
-<<div class="panel-heading">
+ <div class="panel-heading">
 <div class="panel-title col-md-5">Đơn hàng</div>
 <button type="button" class="btn btn-info right"><a href="?page=order&type=add">Tạo đơn hàng mới</a></button>
 </div>

@@ -204,7 +204,7 @@ $slider_4 = select_one($slider_4);
 										<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">Xem chi tiết</a></button>
 									</div>
 									<div  class="viewmore text-center">
-										<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">THÊM VÀO GIỎ</a></button>
+										<button type="button" class="btn btn-success"><a href="page/cart/addtocart.php?id=<?php echo $id ?>">THÊM VÀO GIỎ</a></button>
 									</div>
 
 									<?php if($data_ct_giamgia){ ?>
@@ -222,7 +222,7 @@ $slider_4 = select_one($slider_4);
 						</h2>
 					</div>
 					<?php 
-					$sql_new = "SELECT * FROM product where Status = 1 ORDER BY id DESC LIMIT 10";
+					$sql_new = "SELECT pr.* FROM product pr , detail_order de, `order` ord where pr.ID =de.Product_ID and de.Order_ID = ord.ID and pr.Status = 1 and ord.Order_Status = 1 ORDER BY id DESC LIMIT 10	";
 			   		 //echo $sqlMNs;exit();
 					$sql_new =  select_list($sql_new);
 					?>
@@ -274,7 +274,7 @@ $slider_4 = select_one($slider_4);
 										<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">Xem chi tiết</a></button>
 									</div>
 									<div  class="viewmore text-center">
-										<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">THÊM VÀO GIỎ</a></button>
+										<button type="button" class="btn btn-success"><a href="?page/cart/addtocart.php?id=<?php echo $datas['ID'] ?>">THÊM VÀO GIỎ</a></button>
 									</div>
 
 									<?php if($data_ct_giamgia){ ?>
