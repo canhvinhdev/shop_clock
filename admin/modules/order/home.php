@@ -13,6 +13,10 @@ if($type=="edit"){
 if($type=="delete"){
 	include("modules/order/delete.php");
 }
-
-
+if($type=="info"){
+	include("modules/order/info.php");
+}
+if($type=="bill"){
+	include("modules/order/bill.php");
+}
 ?>

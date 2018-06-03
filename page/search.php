@@ -115,7 +115,7 @@ $result = select_list($sql_search);
 
 
 													<?php if($data_ct_giamgia_rel){ ?>
-														<div class="gift"><img src="images/gift.png" style="width: 100px" class="img-responsive" alt="Image"></div>
+														<div class="gift"><img src="images/gift.png" style="width: 50px" class="img-responsive" alt="Image"></div>
 													<?php } ?>
 
 

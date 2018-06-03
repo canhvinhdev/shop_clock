@@ -20,10 +20,36 @@ if(isset($_SESSION['cart'])){
 <header>
 	<div class="container-fluid full-width">
 		<div class="container">
+
+
+				<div class="row">
+
+				<div class="col-md-12" style="    background: #e79c0c;">
+
+
+				<ul class="top_bar">
+				<?php 
+						if ($user) {			
+							?>
+							<li class="li_lv1"><a href="?page=homeuser">Xin chào <?php echo $user['User_Name'] ?></a></li>
+							<li class="li_lv1"><a href="?page=logout">Đăng xuất</a></li>
+
+						<?php }else { ?>
+							
+
+						<?php } ?>
+						</ul>
+				</div>
+
+				</div>
+
 			<div class="row flex" >
+
+
+
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div id="logo">
-						<a href="#"><img src="images/logo_footer.png" class="img-responsive" alt=""></a>
+						<a href="/"><img src="images/logo_footer.png" class="img-responsive" alt=""></a>
 					</div>
 
 				</div>
@@ -40,9 +66,12 @@ if(isset($_SESSION['cart'])){
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right" style="    padding-top: 10px;">
 
 
-					<a href="?page=login"> <i class="fa fa-user-plus fa-3x" aria-hidden="true"></i></a>
-					<a href="?page=register"> <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></a>
+					<?php   	if (!$user) {			 ?>
 
+
+					<a href="?page=login"  data-toggle="tooltip" title="Đăng nhập" >   <i class="fa fa-user-plus fa-3x" aria-hidden="true"></i></a>
+					<a href="?page=register" data-toggle="tooltip" title="Đăng ký" > <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></a>
+					<?php } ?>			
 					<a href="?page=cart"> <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
 							(<?php echo $total;?>) Sản phẩm
 					</a>
@@ -60,15 +89,13 @@ if(isset($_SESSION['cart'])){
 			<nav class="nav-mobile-setting" role="navigation">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
-
-
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="">
 						<ul class="nav navbar-nav">
 
-
+								<li><a href="/">Trang chủ</a>
+							</li>
 							<?php 
-
 							$sqlCate_moblie = "select * from category where Parent_id=0";
 
 							$sqlCate_moblie = select_list($sqlCate_moblie);
@@ -88,28 +115,18 @@ if(isset($_SESSION['cart'])){
 											<?php } ?>
 										</ul>
 									<?php } ?>
-
-
 								</li>
-
-
 							<?php } ?>
 
 							<li><a href="?page=about">Giới thiệu</a>
 							</li>
-
-
 							<li><a href="?page=contact">Liên hệ</a>
 							</li>
-
 						</ul>
-
-
 					</div><!-- /.navbar-collapse -->
 				</div>
 			</nav>
 		</div>
-
 		<div id="main">
 
 			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -133,14 +150,17 @@ if(isset($_SESSION['cart'])){
 			<?php 
 			if ($user) {			
 				?>
-				<div class="main-menu col-md-8">
+				<div class="main-menu col-md-12">
 
 
 				<?php }else{  ?>
 					<div class="main-menu col-md-12">	
 					<?php } ?>
 					<nav>
-						<ul class="ffff">								
+						<ul class="ffff">	
+							
+						<li class="li_lv1"><a href="/">Trang chủ</a>
+							</li>
 							<?php 
 							$sqlCate = "select * from category where Parent_id = 0 ";
 							$sqlCategory = select_list($sqlCate);
@@ -187,22 +207,7 @@ if(isset($_SESSION['cart'])){
 						</ul>
 					</nav>
 				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 main-menu text-right">
-					<ul>
-
-
-						<?php 
-						if ($user) {			
-							?>
-							<li class="li_lv1"><a href="?page=homeuser">Xin chào <?php echo $user['User_Name'] ?></a></li>
-							<li class="li_lv1"><a href="?page=logout">Đăng xuất</a></li>
-
-						<?php }else { ?>
-							
-
-						<?php } ?>
-					</ul>
-				</div>
+				
 			</div>
 		</div>
 

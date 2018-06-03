@@ -208,7 +208,7 @@ $slider_4 = select_one($slider_4);
 									</div>
 
 									<?php if($data_ct_giamgia){ ?>
-										<div class="gift"><img src="images/gift.png" style="width: 100px" class="img-responsive" alt="Image"></div>
+										<div class="gift"><img src="images/gift.png" style="width: 50px" class="img-responsive" alt="Image"></div>
 									<?php } ?>
 								</div>	
 
@@ -223,7 +223,7 @@ $slider_4 = select_one($slider_4);
 					</div>
 					<?php 
 					$sql_new = "SELECT * FROM product where Status = 1 ORDER BY id DESC LIMIT 10";
-			    //echo $sqlMNs;exit();
+			   		 //echo $sqlMNs;exit();
 					$sql_new =  select_list($sql_new);
 					?>
 					<div class="owl-carousel4  owl-carousel owl-theme">
@@ -278,7 +278,7 @@ $slider_4 = select_one($slider_4);
 									</div>
 
 									<?php if($data_ct_giamgia){ ?>
-										<div class="gift"><img src="images/gift.png" style="width: 100px" class="img-responsive" alt="Image"></div>
+										<div class="gift"><img src="images/gift.png" style="width: 50px" class="img-responsive" alt="Image"></div>
 									<?php } ?>
 								</div>	
 

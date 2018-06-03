@@ -412,7 +412,7 @@ if($user){
 
 
 												?>
-												<script language="javascript">window.location="../shopbanhoa/?page=success";
+												<script language="javascript">window.location="../?page=success";
 											</script>';
 
 											<?php 

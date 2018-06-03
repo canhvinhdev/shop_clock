@@ -1,26 +1,32 @@
 <?php 
 $id = isset($_GET["id"]) ? $_GET["id"] : 0;
 
+$current_page=isset($_GET['pagination'])?$_GET['pagination']:1;
+	$limit= 4;
+	$sqlnum="select count(*) as number from product where Category_ID=".$id;
+
+	$num = select_one($sqlnum);
+
+	$total_record=$num['number'];
+
+	$total_page=ceil($total_record/$limit);
+	$start=($current_page-1)*$limit;
+
+
+
 if(empty($id)) {
 	require_once("error.php");
 } else {
-	$sqlCate = "select * from product where Status = 1 and Category_ID = $id";
+
+	$sqlCate = "select * from product where Status = 1 and Category_ID = $id limit {$start}, {$limit}";
 	$sqlCate = select_list($sqlCate);
 }
 
 
 
-$current_page=isset($_GET['page'])?$_GET['page']:1;
-	$limit=2;
-	$sqlnum="select count(*) as number from product where Category_ID=".$id;
-    //echo $sqlnum;exit();
-	$num = select_one($sqlnum);
-	//print_r($num);exit();
-	$total_record=$num['number'];
-    //echo $total_record;exit();
-	$total_page=ceil($total_record/$limit);
-	$start=($current_page-1)*$limit;
-	
+
+
+
 
 $sql_breadcrumb = "select * from  category where ID = $id";
 $data_breadcrumb = select_one($sql_breadcrumb);
@@ -40,6 +46,9 @@ $data_breadcrumb = select_one($sql_breadcrumb);
 		</ol>
 	</div>
 </div>
+
+
+
 
 
 <div class="container">
@@ -113,7 +122,7 @@ $data_breadcrumb = select_one($sql_breadcrumb);
 									</div>
 
 					<?php if($data_ct_giamgia){ ?>
-					<div class="gift"><img src="images/gift.png" style="width: 100px" class="img-responsive" alt="Image"></div>
+					<div class="gift"><img src="images/gift.png" style="width: 50px" class="img-responsive" alt="Image"></div>
 					<?php } ?>
 				</div>	
 			</div>
@@ -138,22 +147,31 @@ $data_breadcrumb = select_one($sql_breadcrumb);
 
 
 
+
+<?php if ($start != 0){  ?>
+ 
 <div class="container">	
+
+
+
 	<div class="row">	
    <div style="display: block; clear: both;text-align: center;">
 										<ul  class="pagination">
 											<li>
-												<a href="index.php?page=category&page=<?php if($current_page>1){ echo ($current_page-1);} else echo $current_page; ?>&id=<?php echo $id?>">
+												<a href="index.php?page=category&pagination=<?php if($current_page>1){ echo ($current_page-1);} else echo $current_page; ?>&id=<?php echo $id?>">
 												&laquo;</a>
 											</li>
 											<?php if($total_page>0){for($i=1;$i<=$total_page;$i++){?>
-											<li><a href="index.php?page=category&page=<?php echo $i?>&id=<?php echo $id?>"><?php echo $i ?></a></li>
+											<li><a href="index.php?page=category&pagination=<?php echo $i?>&id=<?php echo $id?>"><?php echo $i ?></a></li>
 											<?php }	} ?>
 											<li>
-												<a href="index.php?page=category&page=<?php if($current_page<$total_page){ echo ($current_page+1);} else echo $current_page; ?>&id=<?php echo $id?>">
+												<a href="index.php?page=category&pagination=<?php if($current_page<$total_page){ echo ($current_page+1);} else echo $current_page; ?>&id=<?php echo $id?>">
 													&raquo;</a>
 											</li>
 										</ul>
 									</div>
 			</div>
 		</div>
+
+
+<?php  } ?>

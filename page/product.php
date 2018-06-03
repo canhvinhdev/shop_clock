@@ -335,10 +335,13 @@ $data_ct_giamgia = select_list($sql_promotion);
 			</div>
 			<h3>SẢN PHẨM CÙNG NHÓM</h3>
 			<div class="row">
+
+
+			<div class="related">
 				<?php if ($data_sp_lienquan) {foreach ($data_sp_lienquan as $datas) {
 					?>
 					<div class="col-md-3 ">
-						<div class="card">
+						<div class="card ">
 							<img src="/admin/<?php echo $datas['Product_Images'] ?>" alt="Avatar" style="width:100%">
 							<div class="text-center" style="padding: 10px;">
 
@@ -393,7 +396,7 @@ $data_ct_giamgia = select_list($sql_promotion);
 									<div class="prev"><del>( <?php echo   number_format($giagocsp_rel) ?> ₫ )</del></div>
 								<?php } ?>
 								<?php if($data_ct_giamgia_rel){ ?>
-									<div class="gift"><img src="images/gift.png" style="width: 100px" class="img-responsive" alt="Image"></div>
+									<div class="gift"><img src="images/gift.png" style="width: 50px" class="img-responsive" alt="Image"></div>
 								<?php } ?>
 							</div>
 							<div  class="viewmore text-center">
@@ -405,6 +408,8 @@ $data_ct_giamgia = select_list($sql_promotion);
 						</div>	
 					</div>
 				<?php } } ?>
+			</div>
+
 			</div>
 		</div>
 

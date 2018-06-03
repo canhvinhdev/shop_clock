@@ -73,6 +73,8 @@ function exec_select($sql){
 		$i = 1;
 		//lay tung dong ket qua
 		//while( $row = mysqli_fetch_array($res,MYSQL_ASSOC) )
+
+		$ret = array();
 		while( $row = $res->fetch_array(MYSQLI_ASSOC) )
 		{				
 			$ret[]= $row ;

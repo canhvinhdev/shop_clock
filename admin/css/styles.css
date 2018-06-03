@@ -19,6 +19,9 @@ body {
 .right{
   float: right;
 }
+.btn-info  a{
+  color: #fff !important;
+}
 footer{
    background-color:#2c3742;
    box-shadow:inset 0px 0px 3px #111;
@@ -57,7 +60,7 @@ footer .copy{
 
 .header{
    height:50px;
-   background-color: #2c3742;
+   background-color: #000;
 }
 
 .header .logo h1{
