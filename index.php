@@ -12,7 +12,7 @@ include("checklogin.php");
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Shop bán hóa online</title>
+	<title>Shop bán đồng hồ</title>
 	<!-- Latest compiled and minified CSS & JS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">

@@ -23,36 +23,26 @@ $sql_search = "SELECT * FROM product WHERE Product_Name LIKE ('$keyword')";
 $result = select_list($sql_search);
 
 ?>
-<div class="categori-area" style="padding-top: 30px">
+<div class="categori-area">
 	<div class="container">
-		<div class="row">
-			
-			
-			<div class="col-xs-12 col-sm-12 col-md-12">
-				<div class="col-xs-12 col-sm-12 list_pro" style="clear: both;">
-					<div class="area-title" style="padding-top: 30px">
+	<div class="area-title" style="padding-top: 30px">
 						<h3>Tìm thấy sản phẩm phù hợp với từ khóa: <span class="label-success"><?php echo $q ?></span></h3>
 					</div>
-					<div class="featured-product">
-						<div class="featured-item">
-							<!-- Start featured item -->
-							<?php 
-							
-							if($result){
-								foreach ($result as $datas) {
-									
-									?>
-									<div class="col-sm-3 col-md-4">
-										
-										<div class="featured-inner">
-											<div class="card">
-												<img src="/shopbanhoa/admin/<?php echo $datas['Product_Images'] ?>" alt="Avatar" style="width:100%">
-												<div class="text-center" style="padding: 10px;">
+					</br>
+	<div class="row">
+
+		<?php if ($result) {foreach ($result as $datas) {
+			?>	
 
 
-
-
-													<?php 
+			<div class="col-md-3" style = "margin-bottom: 20px;" >
+				<div class="card">
+					<a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">
+						<img src="/admin/<?php echo $datas['Product_Images'] ?>" alt="Avatar" style="width:100%">
+					</a>
+					<div class="text-center" style="padding: 10px; height: 120px">
+						<h4><b><?php echo $datas['Product_Name'] ?></b></h4> 					
+						<?php 
 
 													$id =  $datas['ID'];
 													
@@ -93,48 +83,34 @@ $result = select_list($sql_search);
 
 
 													?>
-
-													
-
+						<div class="red current"><?php echo  number_format($giacuoicung_rel) ?> ₫</div>
 
 
 
+						<?php if( $data_ct_giamgia_rel ){ ?>
 
-													<h4><b><?php echo $datas['Product_Name'] ?></b></h4> 
+						<div class="prev"><del> Giá GỐC:  <?php echo   number_format($giagocsp_rel) ?> ₫</del></div>
 
-													
-													<div class="red current"><?php echo  number_format($giacuoicung_rel) ?> ₫</div>
-
-													
-
-													<?php if($data_ct_giamgia_rel ){ ?>
-
-														<div class="prev"><del> Giá GỐC:  <?php echo   number_format($giagocsp_rel) ?> ₫</del></div>
-
-													<?php } ?>
-
-
-													<?php if($data_ct_giamgia_rel){ ?>
-														<div class="gift"><img src="images/gift.png" style="width: 50px" class="img-responsive" alt="Image"></div>
-													<?php } ?>
-
-
-												</div>
-												<div  class="viewmore text-center">
-													<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">Xem chi tiết</a></button>
-												</div>
-												<div  class="viewmore text-center">
-													<button type="button" class="btn btn-success"><a href="page/cart/addtocart.php?id=<?php echo $datas['ID'] ?>">THÊM VÀO GIỎ</a></button>
-												</div>
-
-
-											</div>	
-										</div>
-										
-									</div>
-								<?php } }else{ include('page/404.php'); } ?>
-							</div>
-
-						</div>
+						<?php } ?>
 					</div>
-				</div>
+					<div  class="viewmore text-center">
+										<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">Xem chi tiết</a></button>
+									</div>
+									<div  class="viewmore text-center">
+										<button type="button" class="btn btn-success"><a href="page/cart/addtocart.php?id=<?php echo $datas['ID'] ?>">THÊM VÀO GIỎ</a></button>
+									</div>
+
+					<?php if($data_ct_giamgia_rel){ ?>
+					<div class="gift"><img src="images/gift.png" style="width: 50px" class="img-responsive" alt="Image"></div>
+					<?php } ?>
+				</div>	
+			</div>
+			
+			<?php } 
+				}
+				
+
+				?>
+	</div>
+</div>
+</div>

@@ -7,7 +7,7 @@ $a = checkLoggedAdmin();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quản trị viên shop Hoa online</title>
+	<title>Quản trị viên shop bán đồng hồ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
