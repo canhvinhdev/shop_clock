@@ -907,6 +907,14 @@ div.tab button.active {
 	border-bottom: none
  }
  
+
+
+ .featured-inner .card{
+	margin-bottom: 20px !important;
+ }
+ .card_search .text_center{
+	 height: 117px !important;
+ }
 .prod-promotion,.promo-item {position: relative}
  
 .btn a{

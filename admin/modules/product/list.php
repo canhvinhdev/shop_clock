@@ -11,7 +11,7 @@ $data_pro = select_list($sql_pro);
 
 <div class="panel-heading">
 	<div class="panel-title col-md-5">Danh sách sản phẩm</div>
-	<button type="button" class="btn btn-info right"><a href="?page=product&type=add">Thêm hoa</a></button>
+	<button type="button" class="btn btn-info right"><a href="?page=product&type=add">Thêm đồng hồ</a></button>
 </div>
 <div class="panel-body">
 	<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example">

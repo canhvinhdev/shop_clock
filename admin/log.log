@@ -3995,3 +3995,4 @@
 03.06.2018 03:16:14 sql=[select * from discount where ID = 1 ] 
 03.06.2018 03:16:14 sql=[select * from product inner join discountproduct where product.ID = discountproduct.Product_ID and Discount_ID = 1 ] 
 03.06.2018 03:16:14 sql=[select * from product where Status = 1 ] 
+08.06.2018 04:31:47 sql=[select * from users where Email ='admin@gmail.com' and Permission = 1] 
