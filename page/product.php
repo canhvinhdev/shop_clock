@@ -263,7 +263,7 @@ $data_ct_giamgia = select_list($sql_promotion);
 				</h5>
 			</div>
 
-			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			<div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
 				<div class="card-body">
 					<?php if(isset($motasp)) { 	?>
 						<p>	<?php echo $motasp ?></p>

@@ -46,7 +46,7 @@ $result = select_list($sql_search);
 										
 										<div class="featured-inner">
 											<div class="card">
-												<img src="/shopbanhoa/admin/<?php echo $datas['Product_Images'] ?>" alt="Avatar" style="width:100%">
+												<img src="/admin/<?php echo $datas['Product_Images'] ?>" alt="Avatar" style="width:100%">
 												<div class="text-center" style="padding: 10px;">
 
 
@@ -138,3 +138,8 @@ $result = select_list($sql_search);
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
