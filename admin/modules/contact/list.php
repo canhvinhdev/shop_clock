@@ -57,7 +57,7 @@ $i= 1;
 
 				<td>
 					
-<?php echo date("h:i:s m/d/Y", strtotime($datas['Created_Date'])); ?>
+<?php echo date("m/d/Y", strtotime($datas['Created_Date'])); ?>
 				</td>
 				<td class="center">
 					<button type="button" class="btn btn-success"><a href="?page=contact&type=edit&id=<?php echo $datas['ID']?> ">Phản hồi</a></button>

@@ -36,9 +36,9 @@
 
 	<div class="form-group">
 				<label>Tiêu đề tin tức</label>
-				<input class="form-control" placeholder="" value="<?php if($_POST){ echo $title ;} else echo $sql_new2['Title'];?>" name="cname" type="text">
-					<?php
-		        if($_POST){echo '<span style="color:red">'.$validate['Title']."<br/> </span>";}   
+				<input class="form-control" placeholder="" value="<?php if($_POST){ echo $title ;} else echo $sql_new2['Title'];?>" name="title" type="text">
+					<?php 
+		        if($_POST && count($validate)!=0){echo '<span style="color:red">'.$validate['Title']."<br/> </span>";}   
 		    ?>
 			</div>
 

@@ -22,35 +22,22 @@ $slider_4 = select_one($slider_4);
 					<div class="carousel-inner">
 
 						<div class="item active">
-							<img src="admin/<?php echo $slider_1['Image']?>">
-							<div class="carousel-caption">
-								<h3>Headline</h3>
-								<p> <a href="<?php echo $slider_1['Url']?>" target="_blank" class="label label-danger"><?php echo $slider_1['Content']?></a></p>
-							</div>
+						<a href="<?php echo $slider_1['Url']?>" target="_blank" ><img src="admin/<?php echo $slider_1['Image']?>" alt="<?php echo $slider_1['Content']?>"></a>
+							
 						</div><!-- End Item -->
 
 						<div class="item">
-							<img src="admin/<?php echo $slider_2['Image']?>">
-							<div class="carousel-caption">
-								<h3>Headline</h3>
-								<p> <a href="<?php echo $slider2['Url']?>" target="_blank" class="label label-danger"><?php echo $slider_2['Content']?></a></p>
-							</div>
+						<a href="<?php echo $slider2['Url']?>" target="_blank" ><img src="admin/<?php echo $slider_2['Image']?>" alt="<?php echo $slider_2['Content']?>"></a>
+							
 						</div><!-- End Item -->
 
 						<div class="item">
-							<img src="admin/<?php echo $slider_3['Image']?>">
-							<div class="carousel-caption">
-								<h3>Headline</h3>
-								<p> <a href="<?php echo $slider_3['Url']?>" target="_blank" class="label label-danger"><?php echo $slider_3['Content']?></a></p>
-							</div>
+						<a href="<?php echo $slider_3['Url']?>" target="_blank" ><img src="admin/<?php echo $slider_3['Image']?>" alt="<?php echo $slider_3['Content']?>"></a>
+							
 						</div><!-- End Item -->
 
 						<div class="item">
-							<img src="admin/<?php echo $slider_4['Image']?>">
-							<div class="carousel-caption">
-								<h3>Headline</h3>
-								<p> <a href="<?php echo $slider_4['Url']?>" target="_blank" class="label label-danger"><?php echo $slider_4['Content']?></a></p>
-							</div>
+							<a href="<?php echo $slider_4['Url']?>" target="_blank"><img src="admin/<?php echo $slider_4['Image']?>" alt="<?php echo $slider_4['Content']?>"></a>
 						</div><!-- End Item -->
 
 					</div><!-- End Carousel Inner -->
@@ -138,7 +125,7 @@ $slider_4 = select_one($slider_4);
 									?>
 									<li class="clearfix"><span class="time_list_news24h">
 										<span class="label label-danger"><?php echo $data['Created_Date'] ?></span>
-									</span>    <a href="?page=new&amp;id=<?php echo $data['ID'] ?>"" class="title_list_news24h"><?php echo $data['Title'] ?></a></li>
+									</span>    <a href="?page=new&amp;id=<?php echo $data['ID'] ?>" class="title_list_news24h"><?php echo $data['Title'] ?></a></li>
 								<?php  } } ?>										
 							</ul>
 						</div>
@@ -222,7 +209,7 @@ $slider_4 = select_one($slider_4);
 						</h2>
 					</div>
 					<?php 
-					$sql_new = "SELECT pr.* FROM product pr , detail_order de, `order` ord where pr.ID =de.Product_ID and de.Order_ID = ord.ID and pr.Status = 1 and ord.Order_Status = 1 ORDER BY id DESC LIMIT 10	";
+					$sql_new = "SELECT pr.* FROM product pr , detail_order de, `order` ord where pr.ID =de.Product_ID and de.Order_ID = ord.ID and pr.Status = 1 and ord.Order_Status = 1 GROUP BY pr.ID ORDER BY id DESC LIMIT 10";
 			   		 //echo $sqlMNs;exit();
 					$sql_new =  select_list($sql_new);
 					?>

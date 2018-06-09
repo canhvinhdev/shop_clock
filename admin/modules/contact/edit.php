@@ -5,7 +5,7 @@
 	$id = isset($_GET['id']) ? $_GET['id'] : '';
 
 
- $sqlcontact = "select * from comment where ID = $id";
+ $sqlcontact = "select * from contact where ID = $id";
  $contact = select_one($sqlcontact);
 ?>
 

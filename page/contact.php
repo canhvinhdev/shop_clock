@@ -10,7 +10,7 @@ if($_POST){
 		$content_contact = isset($_REQUEST["content_contact"]) ? $_REQUEST["content_contact"]: '';
 		$created_date = date('Y/m/d H:i:s');
 		$status="0";
-		$sql = "insert into contact(User_ID, Status, Name, Phone, Email, Content, Created_Date) values ('$login', '$status', '$name_contact', '$email_contact','$phone_contact','$content_contact','$created_date')";
+		$sql = "insert into contact(User_ID, Status, Name, Phone, Email, Content, Created_Date) values ('$login', '$status', '$name_contact', '$phone_contact','$email_contact','$content_contact','$created_date')";
 		$result = 0;
 		if ($name_contact){
 		//echo "thanh cong";
@@ -98,7 +98,7 @@ if($_POST){
 									<div class="form-group clearfix ">
 										<label for="input " class="col-sm-4 control-label text-left">SĐT:</label>
 										<div class="col-sm-8">
-											<input type="number" name="phone_contact"  class="form-control"  value="<?php  echo $user['Moblie_Number'] ?>" required="">
+											<input type="text" name="phone_contact"  class="form-control"  value="<?php  echo $user['Moblie_Number'] ?>" required="">
 										</div>
 									</div>
 

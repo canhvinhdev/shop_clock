@@ -48,7 +48,7 @@ if (isset($_POST['updatenews'])) {
 
 
 		if($title){
-			$sql_check="select * from news";
+			$sql_check="select * from news where id <>$id";
 			$data_check =select_list($sql_check);
 
 			foreach ($data_check as $data) {
