@@ -327,14 +327,16 @@ if($user){
 											$sql="select * from product where ID in ($str)";
 
 											$query = select_list($sql);
-
-
-
-
+											
 											if($AllTotalPrice>0){
 												$status = "1";
 												$order_status = "0";
-												$msql= "INSERT INTO  `order`(`Name`,`Shipping_Address`, `Moblie_Number`, `Order_Time`,`Method_Payment`,`Subtotal`, `Note` , `Order_Status`,`Status`) VALUES('".$name."','".$address_ship."','".$phone."','".$order_time."', '$payment' ,'".$AllTotalPrice."','".$note."','$order_status','$status')";
+												if($user != 0){
+													$msql= "INSERT INTO  `order`(`User_ID`,`Name`,`Shipping_Address`, `Moblie_Number`, `Order_Time`,`Method_Payment`,`Subtotal`, `Note` , `Order_Status`,`Status`) VALUES('".$user["ID"]."','".$name."','".$address_ship."','".$phone."','".$order_time."', '$payment' ,'".$AllTotalPrice."','".$note."','$order_status','$status')";
+												}else{
+													$msql= "INSERT INTO  `order`(`Name`,`Shipping_Address`, `Moblie_Number`, `Order_Time`,`Method_Payment`,`Subtotal`, `Note` , `Order_Status`,`Status`) VALUES('".$name."','".$address_ship."','".$phone."','".$order_time."', '$payment' ,'".$AllTotalPrice."','".$note."','$order_status','$status')";	
+												}
+												
 												$result = 0;
 												$result=exec_update($msql);
  											
