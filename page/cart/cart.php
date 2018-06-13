@@ -31,12 +31,12 @@
 				foreach($_POST['quantity'] as $id=>$quantity){
 					$sql="select * from product where id='$id'";
 					$data=select_one($sql);
-					
-					$_SESSION['cart'][$id] = $quantity;	
-					
-					
-					
-					} 		//xử lý cập nhật giỏ hàng
+					if($data['Quantity']>$quantity){
+						$_SESSION['cart'][$id] = $quantity;	
+					}else{
+						echo '<script>alert("Sản phẩm ko đủ");</script>';
+					}	
+					}	//xử lý cập nhật giỏ hàng
 				}
 
 				foreach($_SESSION['cart'] as $k => $v)
@@ -120,14 +120,6 @@
 								$giacuoicung = $sp_giamgia;
 
 							}
-
-
-
-
-
-
-
-
 							$totalPrice = $giacuoicung*$_SESSION['cart'][$row['ID']];
 	//var_dump($totalPrice);
 							$AllTotalPrice+=$totalPrice;							
@@ -137,15 +129,6 @@
 								<td><a href="?page=product&id=<?php echo $row['ID']?>" ><?php echo $row['Product_Name'];?></a></td>
 								<td><img src="admin/<?php echo $row['Product_Images'];?>" width="100px"></td>
 								<td a>
-
-
-
-
-
-
-									
-
-
 									<div class="red current">	<?php echo number_format($giacuoicung,0,'','.')?> VNĐ </div>
 
 									<?php if($data_ct_giamgia){ ?>
@@ -153,19 +136,9 @@
 										<div class="prev"><del> <?php echo   number_format($giagocsp) ?> ₫</del></div>
 
 									<?php } ?>
-
-
 								</td>
-
-
-
 								<td b >
-
-
-
 									<input type="number" class="quantity" placeholder="1" min="1" name="quantity[<?php echo $row['ID']?>]" value="<?php echo $_SESSION['cart'][$row['ID']];?>" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-
-
 								</td>
 								<td >
 									<div class="cart-price" aling="center">

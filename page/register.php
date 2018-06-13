@@ -40,10 +40,9 @@ $validate_email = '#^[a-z][a-z0-9\._]{2,31}@[a-z0-9\-]{3,}(\.[a-z]{2,4}){1,2}$#'
 		$sql_check="select * from users where Permission= 0";
 		$result=select_list($sql_check);
 		foreach ($result as $key) {
-
-			if($key['Email']==$email_register)
+			if($key['Email'] == $email_register)
 			{
-				$err['b']="Email này đã có người đăng ký. Vui lòng chọn email  khác.";
+				$err['b']="Email này đã có người đăng ký.";
 
 			}
 		}
@@ -128,17 +127,9 @@ $validate_email = '#^[a-z][a-z0-9\._]{2,31}@[a-z0-9\-]{3,}(\.[a-z]{2,4}){1,2}$#'
 							<input type="email" name="email_register"  class="form-control"  required="" value="<?php if($_POST)  echo $email_register ?>">
 
 							<?php
-							if($_POST){
-							$sql_check="select * from users where Permission= 0";
-		$result=select_list($sql_check);
-		foreach ($result as $key) {
-
-			if($key['Email']==$email_register)
-			{
-				$err['b']="Email này đã có người đăng ký. Vui lòng chọn email  khác.";
-			}
-		}
-							}   
+							if(isset($err['b'])){
+								echo '<label style="margin-left: -85px;">'.$err['b'].'</label>'; 
+							}
 							?>
 						</div>
 					</div>

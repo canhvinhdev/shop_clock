@@ -183,3 +183,7 @@
 03.06.2018 02:47:38 sql=[select * from `order` order by ID desc] 
 03.06.2018 02:48:29 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '2 ','1', curdate(),0)] --> 
 03.06.2018 02:48:29 sql=[select * from `order` order by ID desc] 
+09.06.2018 02:07:57 <!-- sql=[update `order`  set Order_Status = '1' where ID = '43'] --> 
+09.06.2018 02:08:02 <!-- sql=[update `order`  set Order_Status = '1' where ID = '42'] --> 
+09.06.2018 02:08:15 <!-- sql=[update `order`  set Order_Status = '1' where ID = '41'] --> 
+09.06.2018 02:08:19 <!-- sql=[update `order`  set Order_Status = '1' where ID = '39'] --> 

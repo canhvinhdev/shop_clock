@@ -28,4 +28,8 @@ $phone = isset($_POST["phone"]) ? $_POST["phone"] : 0;
 		// var_dump($result );
 
 ?>
+				<script language="javascript">
+					alert("Bạn đã sửa thành công!");
+					window.location ="../../index.php?page=customer&type=list";
+				</script>
 

@@ -18,7 +18,7 @@ if(empty($id)) {
 	require_once("error.php");
 } else {
 
-	$sqlCate = "select * from product where Status = 1 and Category_ID = $id limit {$start}, {$limit}";
+	$sqlCate = "select * from product pro, category cate where pro.Category_ID= cate.ID and pro.Status = 1 and cate.ID = $id or cate.Parent_id = $id limit {$start}, {$limit}";
 	$sqlCate = select_list($sqlCate);
 }
 
@@ -118,7 +118,11 @@ $data_breadcrumb = select_one($sql_breadcrumb);
 										<button type="button" class="btn btn-success"><a href="?page=product&amp;id=<?php echo $datas['ID'] ?>">Xem chi tiết</a></button>
 									</div>
 									<div  class="viewmore text-center">
-										<button type="button" class="btn btn-success"><a href="page/cart/addtocart.php?id=<?php echo $datas['ID'] ?>">THÊM VÀO GIỎ</a></button>
+										<?php if($datas['Quantity'] > 0 ){?>
+											<button type="button" class="btn btn-success"><a href="page/cart/addtocart.php?id=<?php echo $datas['ID']  ?>">THÊM VÀO GIỎ</a></button>
+										<?php }else{?>
+											<button type="button" class="btn btn-danger"> HẾT HÀNG</button>
+										<?php }?>
 									</div>
 
 					<?php if($data_ct_giamgia){ ?>

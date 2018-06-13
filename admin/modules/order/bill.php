@@ -1,3 +1,8 @@
+<?php
+$id = isset($_GET['id']) ? $_GET['id'] : '';
+$sql_order = "select * from `order` where ID = $id";
+$data_order = select_one($sql_order);
+?>
 <body class="bill_content">
 <div id="page" class="page">
     <div class="">
@@ -14,14 +19,31 @@
   <br>
   <br>
 <p>
-Tên khách hàng: ANh ANh
+<?php 
+$user_id =  $data_order['User_ID'];
+if(isset($user_id)){
+$sql_user = "select * from users where ID = $user_id ";
+$data_user = select_one($sql_user);
+?>
 <hr>
-Địa chỉ: Hà Nộ
+Tên khách hàng: <strong>   <?php echo $data_user['User_Name'] ?> </strong>
 <hr>
-SĐT: 09388383333
+
+Địa chỉ: <strong>   <?php echo $data_user['Address'] ?> </strong>
 <hr>
-Email: demo@gmail.com
+Email: <strong>   <?php echo $data_user['Email'] ?> </strong>
 <hr>
+Số điện thoại: <strong>   <?php echo $data_user['Moblie_Number'] ?> </strong>
+<hr>
+<?php }else{  ?>
+<hr>
+Tên khách hàng: <strong>   <?php echo $data_order['Name'] ?> </strong>
+<hr>
+Địa chỉ: <strong>   <?php echo $data_order['Shipping_Address'] ?> </strong>
+<hr>
+Số điện thoại: <strong>   <?php echo $data_order['Moblie_Number'] ?> </strong>
+<hr>
+<?php } ?>
 </p>
 <strong>Danh sách sản phẩm đã mua:</strong>
 <hr>
@@ -29,30 +51,41 @@ Email: demo@gmail.com
     <tr>
       <th>STT</th>
       <th>Tên</th>
-      <th>Đơn giá</th>
       <th>Số</th>
       <th>Thành tiền</th>
     </tr>
    
-
+    <?php
+$id = isset($_GET['id']) ? $_GET['id'] : '';
+$sql_order = "select * from `detail_order` where Order_ID = $id";
+$list = select_list($sql_order);
+?>
  <tr>
-      <th>1</th>
-      <th>Sản phẩm A</th>
-      <th>2.300.000 vnđ</th>
-      <th>4</th>
-      <th>12.000.000 vnđ</th>
-    </tr>
-   
-
-
-    <tr>
-      <td colspan="4" class="tong">Tổng cộng</td>
-      <td class="cotSo">22.000.000vnđ</td>
+        <?php
+            $id = isset($_GET['id']) ? $_GET['id'] : '';
+            $sql_order = "select * from `detail_order` where Order_ID = $id";
+            $list = select_list($sql_order);
+        ?>
+        <?php $stt =0; $total = 0;
+        if ($list) {foreach ($list as $datas) {  $stt++;?>
+            <th ><?php echo $stt; ?></th>
+            <th><?php echo $datas['ProductName_DetailOrder'];?></th>
+            <th><?php echo $datas['Quantity_DetailOrder'];?></th>
+            <th><?php echo $datas['Price_DetailOrder']; ?></th>
+            <?php $total += $datas['Price_DetailOrder'];?>
+        </tr>
+        <?php } } ?>
+        <tr>
+            <th scope="row"></th>
+            <th></th>
+            <th><strong>Tổng tiền</strong></th>
+            <th><strong><?php echo $total;?></strong></th>
+        </tr>
     </tr>
   </table>
-  <div class="footer-left"> Hà Nội, ngày 16 tháng 12 năm 2014<br/>
+  <div class="footer-left"> Hà Nội, <?php echo date("d/m/Y");?><br/>
     Khách hàng </div>
-  <div class="footer-right"> Hà Nội, ngày 16 tháng 12 năm 2014<br/>
+  <div class="footer-right"> Hà Nội, <?php echo date("d/m/Y");?><br/>
     Nhân viên </div>
 </div>
 </body>

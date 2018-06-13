@@ -11,6 +11,7 @@ else
 {
  $qty=1;
 }
+
 $_SESSION['cart'][$id]=$qty;
 // var_dump($_SESSION['cart']);
 // var_dump($_SESSION['cart'][$id]);
