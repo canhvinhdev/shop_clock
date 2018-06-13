@@ -14,7 +14,7 @@ $password = isset($_REQUEST["password_index"]) ? $_REQUEST["password_index"] : "
 
 // var_dump(md5($password));
 $error = '';
-$checkLogin = 1;
+$checkLogin = true;
 $user = 0;
 if (isset($_REQUEST["email_index"])){
 	//da nhap thong tin
@@ -27,32 +27,26 @@ if (isset($_REQUEST["email_index"])){
 	
 	if (!$user){
 		//thuc hien co user o day
-		$checkLogin = 0;
+		$checkLogin = false;
 		/*	$error = 'Khong ton tai username';*/
 	}else{
 		//kiem tra pass
 		if (md5($password) != $user['Password']){
-			$checkLogin = 0;
+			$checkLogin = false;
+			
 			/*		$error = 'Password khong dung';*/
 		}
 	}
 	//dung
 
 	if ($checkLogin){
-
 		setLoggedUser($user);
-	
+		echo"<div class='container' style='padding-top: 20px'> <div class='label-success'>";
+		echo('Đăng nhập tài khoản thành công');
+		echo('</div></div>');
+	?>
 
-echo"<div class='container' style='padding-top: 20px'> <div class='label-success'>";
-	echo('Đăng nhập tài khoản thành công');
-	echo('</div></div>');
-
-
-
-?>
-
-<script language="javascript">alert("Bạn đã đăng nhập thành công");window.location="/index.php?page=homeuser";
-            </script>';
+		<script language="javascript">alert("Bạn đã đăng nhập thành công");window.location="/index.php?page=homeuser"; </script>';
 
 <?php
 
@@ -71,11 +65,11 @@ echo"<div class='container' style='padding-top: 20px'> <div class='label-success
 ?>
 
 <?php 
-if ($user) {
+if ($user && $checkLogin ) {
 	//var_dump($user);die();
 
 ?>
-	  <script language="javascript">alert("Bạn đã đăng ký thành công");window.location="../shopbanhoa/index.php?page=homeuser";
+	  <script language="javascript">alert("Bạn đã đăng ký thành công");window.location="/index.php?page=homeuser";
             </script>';
 
        <?php   
@@ -90,7 +84,7 @@ else{
 			<div class="row">
 				<ol class="breadcrumb">
 					<li>
-						<a href="/shopbanhoa">Trang chủ</a>
+						<a href="/">Trang chủ</a>
 					</li>
 
 					

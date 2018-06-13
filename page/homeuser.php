@@ -7,10 +7,8 @@ if(isset($_SESSION["member"])){
 	$_SESSION["member"] = $user;
 	
 	$user_id = $user['ID'];
-	
-		$user_id = $user['ID'];
-$sql2 = "select * from users where ID = $user_id";
-$user_login = select_one($sql2);
+	$sql2 = "select * from users where ID = $user_id";
+	$user_login = select_one($sql2);
 
 
 
