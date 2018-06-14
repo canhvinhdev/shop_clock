@@ -28,13 +28,7 @@ $sql_user = select_one($sql2);
 			<div class="  col-md-6" >
 				<label>Tên</label>
 				<input class="form-control" placeholder=""  value="<?php echo  $sql_user['User_Name'] ?>" name="name" type="text">
-
-
-
 			</div>
-
-
-			
 			<div class="col-md-3" >
 				<label>Ngày sinh</label>
 				<input class="form-control" placeholder="" value="<?php echo  date('d/m/Y',strtotime($sql_user['DOB'])) ?>" name="dob" type="type">
@@ -45,7 +39,7 @@ $sql_user = select_one($sql2);
 
 			<div class="col-md-3" >
 				<label>Giới tính</label>
-				<select name="DOB" id="input" class="form-control" required="required">
+				<select name="sex" id="input" class="form-control" required="required">
 				<option value="0" <?php if ($sql_user['Sex'] == 0) {  ?> selected <?php } ?> >Nữ</option>
 					<option value="1" <?php if ($sql_user['Sex'] == 1) {  ?> selected <?php } ?> >Nam</option>
 				</select>

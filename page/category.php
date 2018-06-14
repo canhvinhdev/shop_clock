@@ -3,7 +3,7 @@ $id = isset($_GET["id"]) ? $_GET["id"] : 0;
 
 $current_page=isset($_GET['pagination'])?$_GET['pagination']:1;
 	$limit= 4;
-	$sqlnum="select count(*) as number from product where Category_ID=".$id;
+	$sqlnum="select count(*) as number from product where Status = 1 and Category_ID=".$id;
 
 	$num = select_one($sqlnum);
 
@@ -18,7 +18,7 @@ if(empty($id)) {
 	require_once("error.php");
 } else {
 
-	$sqlCate = "select * from product pro, category cate where pro.Category_ID= cate.ID and pro.Status = 1 and cate.ID = $id or cate.Parent_id = $id limit {$start}, {$limit}";
+	$sqlCate = "select pro.* from product pro, category cate where pro.Category_ID= cate.ID and pro.Status = 1 and cate.ID = $id or cate.Parent_id = $id limit {$start}, {$limit}";
 	$sqlCate = select_list($sqlCate);
 }
 
@@ -152,7 +152,7 @@ $data_breadcrumb = select_one($sql_breadcrumb);
 
 
 
-<?php if ($start != 0){  ?>
+<?php if ($total_page > 1){  ?>
  
 <div class="container">	
 

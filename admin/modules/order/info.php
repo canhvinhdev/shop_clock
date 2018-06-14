@@ -29,23 +29,6 @@ $data_order = select_one($sql_order);
 	<div class="col-md-6">
 
 <h4>Thông tin khách hàng</h4>
-<?php 
-$user_id =  $data_order['User_ID'];
-if(isset($user_id)){
-$sql_user = "select * from users where ID = $user_id ";
-$data_user = select_one($sql_user);
-?>
-<hr>
-Tên khách hàng: <strong><?php echo $data_user['User_Name'] ?> </strong>
-<hr>
-
-Địa chỉ: <strong>   <?php echo $data_user['Address'] ?> </strong>
-<hr>
-Email: <strong>   <?php echo $data_user['Email'] ?> </strong>
-<hr>
-Số điện thoại: <strong>   <?php echo $data_user['Moblie_Number'] ?> </strong>
-<hr>
-<?php }else{  ?>
 <hr>
 Tên khách hàng: <strong>   <?php echo $data_order['Name'] ?> </strong>
 <hr>
@@ -53,7 +36,8 @@ Tên khách hàng: <strong>   <?php echo $data_order['Name'] ?> </strong>
 <hr>
 Số điện thoại: <strong>   <?php echo $data_order['Moblie_Number'] ?> </strong>
 <hr>
-<?php } ?>
+Gi chú: <strong>   <?php echo $data_order['Note'] ?> </strong>
+<hr>
 </div>
 <div class="col-md-6">
 

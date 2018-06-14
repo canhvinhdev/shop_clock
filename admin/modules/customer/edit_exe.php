@@ -1,10 +1,14 @@
 <?php
  include("../lib_db.php");
 
- $id = isset($_REQUEST['id']) ? $_REQUEST['id'] : '';
-  	$name = isset($_POST["name"]) ? $_POST["name"] : 0;
+$id = isset($_REQUEST['id']) ? $_REQUEST['id'] : '';
+$name = isset($_POST["name"]) ? $_POST["name"] : 0;
 
-	$password = isset($_POST["password"]) ? $_POST["password"] : 0;
+$sql2 = "select * from users where ID = $id";
+$sql_user = select_one($sql2);
+
+
+$password = isset($_POST["password"]) ? $_POST["password"] : 0;
 
 
 $dob = isset($_POST["dob"]) ? $_POST["dob"] : 0;
@@ -18,9 +22,11 @@ $email = isset($_POST["email"]) ? $_POST["email"] : 0;
 $phone = isset($_POST["phone"]) ? $_POST["phone"] : 0;
 
 
-
-  $sql = "update users set User_Name = '$name', Password = '$password' ,  DOB = '$dob',  Sex = '$sex',  Address = '$address',  Email = '$email',  Moblie_Number = '$phone' where ID ='$id'";
-	
+if($sql_user['Password'] == $password){
+	$sql = "update users set User_Name = '$name', DOB = '$dob',  Sex = '$sex',  Address = '$address',  Email = '$email',  Moblie_Number = '$phone' where ID ='$id'";
+}else{
+	$sql = "update users set User_Name = '$name', Password = '$password' ,  DOB = '$dob',  Sex = '$sex',  Address = '$address',  Email = '$email',  Moblie_Number = '$phone' where ID ='$id'";
+}	
 	
 		$result = exec_update($sql);
 		//echo "thanh cong";

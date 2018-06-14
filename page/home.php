@@ -27,7 +27,7 @@ $slider_4 = select_one($slider_4);
 						</div><!-- End Item -->
 
 						<div class="item">
-						<a href="<?php echo $slider2['Url']?>" target="_blank" ><img src="admin/<?php echo $slider_2['Image']?>" alt="<?php echo $slider_2['Content']?>"></a>
+						<a href="<?php echo $slider_2['Url']?>" target="_blank" ><img src="admin/<?php echo $slider_2['Image']?>" alt="<?php echo $slider_2['Content']?>"></a>
 							
 						</div><!-- End Item -->
 

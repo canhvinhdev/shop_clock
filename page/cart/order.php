@@ -50,21 +50,20 @@ if($user){
 
 					<div class="form-group">
 						<label for="exampleInputPassword1">Người nhận</label>
-						<input type="text" class="form-control" value="<?php echo $user_login['User_Name'] ?>" name="name" id="exampleInputPassword1" placeholder="Nhập tên người nhận">
+						<input type="text" class="form-control" value="<?php echo $user_login['User_Name'] ?>" name="name" id="exampleInputPassword1" placeholder="Nhập tên người nhận" required>
 					</div>
-
 
 					<div class="form-group">
 						<label for="exampleInputPassword1">Số điện thoại</label>
-						<input type="number" class="form-control" name="phone" value="<?php echo $user_login['Moblie_Number'] ?>"  id="" placeholder="Số điện thoại">
+						<input type="number" class="form-control" name="phone" value="<?php echo $user_login['Moblie_Number'] ?>"  id="" placeholder="Số điện thoại" required>
 					</div>
 					<div class="form-group">
 						<label for="exampleInputPassword1">Địa chỉ nhận hàng</label>
-						<input type="text" class="form-control" name="address_ship"  value="<?php echo $user_login['Address'] ?>"  id="" placeholder="Địa chỉ nhận hàng">
+						<input type="text" class="form-control" name="address_ship"  value="<?php echo $user_login['Address'] ?>"  id="" placeholder="Địa chỉ nhận hàng" required>
 					</div>	
 					<div class="form-group">
 						<label for="exampleInputPassword1">Ghi chú thêm</label>
-						<input type="text" class="form-control" name="note" id="" placeholder="Ghi chú thêm">
+						<input type="text" class="form-control" name="note" id="" placeholder="Ghi chú thêm" required>
 					</div>
 					<div class="form-group">
 						<div class="panel-heading">
