@@ -64,3 +64,23 @@
 14.06.2018 04:03:14 <!-- sql=[update users set User_Name = 'canhvinh', Password = '0' ,  DOB = '01/01/1971',  Sex = '0',  Address = '12/15/dong da ha noi',  Email = 'canhvinhdev@gmail.com',  Moblie_Number = '984009503' where ID ='16'] --> 
 14.06.2018 04:03:27 <!-- sql=[update users set User_Name = 'canhvinh', Password = '0' ,  DOB = '01/01/1971',  Sex = '0',  Address = '12/15/dong da ha noi',  Email = 'canhvinhdev@gmail.com',  Moblie_Number = '984009503' where ID ='16'] --> 
 14.06.2018 04:03:52 <!-- sql=[update users set User_Name = 'canhvinh', Password = '0' ,  DOB = '01/01/1971',  Sex = '0',  Address = '12/15/dong da ha noi',  Email = 'canhvinhdev@gmail.com',  Moblie_Number = '984009503' where ID ='16'] --> 
+14.06.2018 06:03:20 sql=[select * from users where ID = 20] 
+14.06.2018 06:03:20 <!-- sql=[update users set User_Name = 'tran van d', DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+14.06.2018 06:04:58 sql=[select * from users where ID = 16] 
+14.06.2018 06:04:58 <!-- sql=[0] --> 
+14.06.2018 06:05:29 sql=[select * from users where ID = 16] 
+14.06.2018 06:05:29 <!-- sql=[0] --> 
+14.06.2018 06:05:55 sql=[select * from users where ID = 16] 
+14.06.2018 06:05:55 <!-- sql=[0] --> 
+14.06.2018 06:06:25 sql=[select * from users where ID = 16] 
+14.06.2018 06:06:25 <!-- sql=[0] --> 
+14.06.2018 06:06:57 sql=[select * from users where ID = 16] 
+14.06.2018 06:06:57 <!-- sql=[0] --> 
+14.06.2018 06:09:17 sql=[select * from users where ID = 16] 
+14.06.2018 06:09:17 <!-- sql=[update users set User_Name = 'tututuww', Password = 'cfcd208495d565ef66e7dff9f98764da',  DOB = '12/01/1991',  Sex = '1',  Address = 'nham hoa',  Email = 'tututuww@gmail.com',  Moblie_Number = '962089067' where ID ='16'] --> 
+14.06.2018 06:09:32 sql=[select * from users where ID = 16] 
+14.06.2018 06:09:32 <!-- sql=[update users set User_Name = 'tututuww',Password = '0' DOB = '12/01/1991',  Sex = '1',  Address = 'nham hoa',  Email = 'tututuww@gmail.com',  Moblie_Number = '962089067' where ID ='16'] --> 
+14.06.2018 06:09:43 sql=[select * from users where ID = 16] 
+14.06.2018 06:09:43 <!-- sql=[update users set User_Name = 'tututuww',Password = '0' DOB = '01/12/1991',  Sex = '1',  Address = 'nham hoa',  Email = 'tututuww@gmail.com',  Moblie_Number = '962089067' where ID ='16'] --> 
+14.06.2018 06:10:35 sql=[select * from users where ID = 16] 
+14.06.2018 06:10:35 <!-- sql=[update users set User_Name = 'tututuww',Password = '0' DOB = '01/12/1991',  Sex = '1',  Address = 'nham hoa',  Email = 'tututuww@gmail.com',  Moblie_Number = '962089067' where ID ='16'] --> 
