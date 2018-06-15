@@ -2,7 +2,7 @@
 $id = isset($_GET["id"]) ? $_GET["id"] : 0;
 
 $current_page=isset($_GET['pagination'])?$_GET['pagination']:1;
-	$limit= 4;
+	$limit= 8;
 	$sqlnum="select count(*) as number from product pro, category cate where pro.Category_ID= cate.ID and pro.Status = 1 and (cate.ID = $id or cate.Parent_id = $id)";
 
 	$num = select_one($sqlnum);
@@ -69,7 +69,7 @@ $data_breadcrumb = select_one($sql_breadcrumb);
 
 
 
-						$sql_promotion = "select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = $id ";
+						$sql_promotion = "select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = $id_ ";
 						$data_ct_giamgia = select_list($sql_promotion);
 
 

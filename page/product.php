@@ -11,7 +11,7 @@ $motasp = $data_product['Description'];
 $soluongsp = $data_product['Quantity'];
 $giagocsp = $data_product['Product_Price'];
 
-$sql_related= "select * from  product where Category_ID = {$data_product['Category_ID']} and ID != $id limit 5";
+$sql_related= "select * from  product where Category_ID = {$data_product['Category_ID']} and ID != $id limit 4";
 $data_sp_lienquan = select_list($sql_related);
 
 
