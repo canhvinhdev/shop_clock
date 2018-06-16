@@ -68,7 +68,7 @@ $sql_user = select_one($sql2);
 
 			<div class="col-md-6" >
 				<label>Email</label>
-				<input class="form-control" readonly= placeholder=""  value="<?php echo  $sql_user['Email'] ?>" name="email" type="text">
+				<input class="form-control" placeholder=""  value="<?php echo  $sql_user['Email'] ?>" name="email" type="text">
 
 
 
@@ -77,17 +77,14 @@ $sql_user = select_one($sql2);
 
 			<div class="col-md-6" >
 				<label>Ngày tạo </label>
-				<input class="form-control" placeholder="" readonly="" value="<?php echo  date('d/m/Y',strtotime($sql_user['Registed_Date'])) ?>" name="title" type="type">
-
-
-
+				<input class="form-control" placeholder=""  value="<?php echo  date('d/m/Y',strtotime($sql_user['Registed_Date'])) ?>" type="type">
 			</div>
 
 
 
 			<div class="col-md-6" >
 				<label>Mật khẩu</label>
-				<input class="form-control" placeholder=""  value="<?php echo  $sql_user['Password'] ?>" name="title" type="password">
+				<input class="form-control" placeholder=""  value="<?php echo $sql_user['Password'];?>" name="password" type="text">
 
 
 

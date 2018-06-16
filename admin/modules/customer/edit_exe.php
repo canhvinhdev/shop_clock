@@ -20,10 +20,8 @@ $address = isset($_POST["address"]) ? $_POST["address"] : 0;
 $email = isset($_POST["email"]) ? $_POST["email"] : 0;
 
 $phone = isset($_POST["phone"]) ? $_POST["phone"] : 0;
-
-
 if($sql_user['Password'] == $password){
-	$sql = "update users set User_Name = '$name',Password = '$password' DOB = '$dob',  Sex = '$sex',  Address = '$address',  Email = '$email',  Moblie_Number = '$phone' where ID ='$id'";
+	$sql = "update users set User_Name = '$name',Password = '$password', DOB = '$dob',  Sex = '$sex',  Address = '$address',  Email = '$email',  Moblie_Number = '$phone' where ID ='$id'";
 }else{
 	$sql = "update users set User_Name = '$name', Password = '".md5($password)."',  DOB = '$dob',  Sex = '$sex',  Address = '$address',  Email = '$email',  Moblie_Number = '$phone' where ID ='$id'";
 }	

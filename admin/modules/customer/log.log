@@ -84,3 +84,33 @@
 14.06.2018 06:09:43 <!-- sql=[update users set User_Name = 'tututuww',Password = '0' DOB = '01/12/1991',  Sex = '1',  Address = 'nham hoa',  Email = 'tututuww@gmail.com',  Moblie_Number = '962089067' where ID ='16'] --> 
 14.06.2018 06:10:35 sql=[select * from users where ID = 16] 
 14.06.2018 06:10:35 <!-- sql=[update users set User_Name = 'tututuww',Password = '0' DOB = '01/12/1991',  Sex = '1',  Address = 'nham hoa',  Email = 'tututuww@gmail.com',  Moblie_Number = '962089067' where ID ='16'] --> 
+16.06.2018 10:37:57 sql=[select * from users where ID = 20] 
+16.06.2018 10:37:57 <!-- sql=[update users set User_Name = 'tran van d',Password = '0' DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 10:38:24 sql=[select * from users where ID = 20] 
+16.06.2018 10:38:24 <!-- sql=[update users set User_Name = 'tran van d',Password = '0' DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 10:38:34 sql=[select * from users where ID = 20] 
+16.06.2018 10:38:34 <!-- sql=[update users set User_Name = 'tran van d',Password = '0' DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 10:39:34 sql=[select * from users where ID = 20] 
+16.06.2018 10:39:34 <!-- sql=[update users set User_Name = 'tran van d',Password = '0' DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 10:41:22 sql=[select * from users where ID = 20] 
+16.06.2018 10:41:22 <!-- sql=[update users set User_Name = 'tran van d',Password = '0', DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 10:55:09 sql=[select * from users where ID = 20] 
+16.06.2018 10:55:09 <!-- sql=[update users set User_Name = 'tran van d',Password = '0', DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 10:55:46 sql=[select * from users where ID = 20] 
+16.06.2018 10:55:46 <!-- sql=[update users set User_Name = 'tran van d',Password = '0', DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 10:57:02 sql=[select * from users where ID = 20] 
+16.06.2018 10:57:02 <!-- sql=[update users set User_Name = 'tran van d',Password = '0', DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 10:57:49 sql=[select * from users where ID = 20] 
+16.06.2018 11:06:33 sql=[select * from users where ID = 20] 
+16.06.2018 11:08:28 sql=[select * from users where ID = 20] 
+16.06.2018 11:08:28 <!-- sql=[update users set User_Name = 'tran van d', Password = '202cb962ac59075b964b07152d234b70',  DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 11:10:08 sql=[select * from users where ID = 20] 
+16.06.2018 11:10:08 <!-- sql=[update users set User_Name = 'tran van d', Password = '202cb962ac59075b964b07152d234b70',  DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 11:10:33 sql=[select * from users where ID = 20] 
+16.06.2018 11:10:33 <!-- sql=[update users set User_Name = 'tran van d', Password = '827ccb0eea8a706c4c34a16891f84e7b',  DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 11:10:48 sql=[select * from users where ID = 20] 
+16.06.2018 11:10:48 <!-- sql=[update users set User_Name = 'tran van d', Password = '202cb962ac59075b964b07152d234b70',  DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 11:16:39 sql=[select * from users where ID = 20] 
+16.06.2018 11:16:39 <!-- sql=[update users set User_Name = 'tran van d',Password = '202cb962ac59075b964b07152d234b70', DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
+16.06.2018 11:17:06 sql=[select * from users where ID = 20] 
+16.06.2018 11:17:06 <!-- sql=[update users set User_Name = 'tran van d',Password = '202cb962ac59075b964b07152d234b70', DOB = '01/01/1970',  Sex = '0',  Address = 'nam dinh',  Email = 'tutv94@gmail.com',  Moblie_Number = '123456789' where ID ='20'] --> 
