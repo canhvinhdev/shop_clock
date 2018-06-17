@@ -52,7 +52,7 @@ $i= 1;
 				<td><img src="<?php echo $datas['Image'] ?>" width="200"></td>
 				<td><?php echo $datas['Url']?></td>
 				<td class="center">
-					<button type="button" class="btn btn-success"><a href="?page=slider&type=edit&id=<?php echo $datas['ID']?> ">Cập nhật</a></button>
+					<button type="button" class="btn btn-success"><a <a onclick="javascript: return confirm('Bạn muốn xóa slide không');" href="?page=slider&type=edit&id=<?php echo $datas['ID']?> ">Cập nhật</a></button>
 					
 				</td>
 			</tr>

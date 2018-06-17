@@ -46,7 +46,7 @@ $data_news = select_list($sql_new);
 					
 						<td class="center">
 							<button type="button" class="btn btn-success"><a href="?page=new&type=edit&id=<?php echo $datas['ID']?> ">Sửa</a></button>
-					<button type="button" class="btn btn-danger"><a href="?page=new&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
+					<button type="button" class="btn btn-danger"><a <a onclick="javascript: return confirm('Bạn muốn xóa tin tức không');" href="?page=new&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
 						</td>
 					</tr>
 					<?php } } ?>

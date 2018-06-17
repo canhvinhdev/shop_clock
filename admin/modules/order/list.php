@@ -114,7 +114,7 @@ VNĐ
 
 
 				<button type="button" class="btn btn-success"><a href="?page=order&type=edit&id=<?php echo $datas['ID']?> ">Sửa</a></button>
-				<button type="button" class="btn btn-danger"><a href="?page=order&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
+				<button type="button" class="btn btn-danger"><a onclick="javascript: return confirm('Bạn muốn xóa hóa đơn không');" href= "?page=order&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
 			</td>
 		</tr>
 

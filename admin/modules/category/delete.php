@@ -6,7 +6,6 @@
 	$sql_parent_ID = "select * from category where ID = $id";
 	$data_parent_ID = select_one($sql_parent_ID);
 
-
 	$sql_parent_product = "select * from product where Category_ID = $id";
 	$data_parent_product = select_list($sql_parent_product);
 
@@ -22,7 +21,7 @@ else{
 
 
 
-
+	echo "<scrip> alert('Bạn muốn xóa danh mục ko')</scrip>";
 	$sqldelC = "delete from category where ID = $id";
 	$reldelC = exec_update($sqldelC);
 

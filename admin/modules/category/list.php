@@ -81,7 +81,7 @@ $data_cate = select_list($sql_cate);
 							</td>
 							<td class="center">
 								<button type="button" class="btn btn-success"><a href="?page=category&type=edit&id=<?php echo $key['ID']?> ">Sửa</a></button>
-								<button type="button" class="btn btn-danger"><a href="?page=category&type=delete&id=<?php echo $key['ID']?> ">Xóa</a></button>
+								<button type="button" class="btn btn-danger"><a <a onclick="javascript: return confirm('Bạn muốn xóa danh mục không');" href="?page=category&type=delete&id=<?php echo $key['ID']?> ">Xóa</a></button>
 							</td>
 						</tr>
 						<?php

@@ -39,7 +39,7 @@ $data_discount = select_list($sql_discount);
 
 							<button type="button" class="btn btn-success"><a href="?page=discount&type=discount_product&id=<?php echo $datas['ID']?> ">Cấu hình</a></button>
 							<button type="button" class="btn btn-success"><a href="?page=discount&type=edit&id=<?php echo $datas['ID']?> ">Sửa</a></button>
-							<button type="button" class="btn btn-danger"><a href="?page=discount&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
+							<button type="button" class="btn btn-danger"><a <a onclick="javascript: return confirm('Bạn muốn xóa khuyến mãi không');" href="?page=discount&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
 						</td>
 					</tr>
 					<?php } } ?>

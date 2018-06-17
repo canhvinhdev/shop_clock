@@ -48,7 +48,7 @@ $data_user = select_list($sql_user);
 
 							<button type="button" class="btn btn-success"><a href="?page=customer&type=order&id=<?php echo $datas['ID']?> ">Đơn hàng</a></button>
 							<button type="button" class="btn btn-success"><a href="?page=customer&type=edit&id=<?php echo $datas['ID']?> ">Sửa</a></button>
-					<button type="button" class="btn btn-danger"><a href="?page=customer&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
+					<button type="button" class="btn btn-danger"><a <a onclick="javascript: return confirm('Bạn muốn xóa khách hàng không');" href="?page=customer&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
 						</td>
 					</tr>
 					<?php } } ?>

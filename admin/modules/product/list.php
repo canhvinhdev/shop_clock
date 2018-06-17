@@ -128,7 +128,7 @@ $data_pro = select_list($sql_pro);
 						</td>
 						<td class="center">
 							<button type="button" class="btn btn-success"><a href="?page=product&type=edit&id=<?php echo $datas['ID']?> ">Sửa</a></button>
-							<button type="button" class="btn btn-danger"><a href="?page=product&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
+							<button type="button" class="btn btn-danger"><a  onclick="javascript: return confirm('Bạn muốn xóa sản phẩm không');"  href="?page=product&type=delete&id=<?php echo $datas['ID']?> ">Xóa</a></button>
 						</td>
 					</tr>
 
