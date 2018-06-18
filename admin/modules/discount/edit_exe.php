@@ -29,7 +29,7 @@ if($_REQUEST)
 	$time_now=strtotime($now);
         	//echo $data['ngay_bd'];
 	$start_fix =strtotime($start);
-		    //echo $ngay_bd1;exit();
+		    echo $start_fix;exit();
 	$end_fix =strtotime($end); 
 	if($start_fix<$time_now){
 		$validate['start']="Ngày bắt đầu lớn hơn hoặc bằng ngày hiện tại!"; 

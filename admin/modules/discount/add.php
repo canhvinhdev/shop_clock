@@ -30,7 +30,7 @@ include("add_exe.php");
 				</div>
 				<div class="form-group">
 					<label>Ngày bắt đầu</label>		
-				<input type="date" name="start"  class="form-control" value="<?php if($_POST){ echo $start; } ?>" required="required" min="1970-01-01" max="2018-12-31" />
+					<input type="date" name="start" class="form-control "  required="required" min="1970-01-01" max="2018-12-31" />
 				<?php
 			        if($_POST){
 			        	if($start<$time_now) echo '<span style="color:red">'.$validate['Start']."<br/> </span>";
@@ -43,7 +43,7 @@ include("add_exe.php");
 	
 
 
-					<input type="date" class="form-control" name="end"  value="<?php if($_POST){ echo $end; } ?>" required="required" min="1970-01-01" max="2018-12-31" />
+					<input type="date" name="end" class="form-control "  required="required" min="1970-01-01" max="2018-12-31"  />
 				<?php
 			        if($_POST){
 			        	if($end<=$start) echo '<span style="color:red">'.$validate['end']."<br/> </span>";

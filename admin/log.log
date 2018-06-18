@@ -8696,3 +8696,60 @@ Kệ hoa mang tới lời ch&uacute;c may mắn, ph&aacute;t t&agrave;i, ph&aacu
 17.06.2018 05:04:50 sql=[SELECT * FROM discountproduct where discountproduct.Product_ID = 7] 
 17.06.2018 05:04:50 sql=[SELECT * FROM discount where ID = 3] 
 17.06.2018 05:05:04 <!-- sql=[update product set Status = 0 where ID = 20] --> 
+19.06.2018 01:21:43 sql=[select * from users where Email ='admin@gmail.com' and Permission = 1] 
+19.06.2018 01:21:47 sql=[select * from discount] 
+19.06.2018 01:22:22 sql=[select * from discount] 
+19.06.2018 01:22:22 <!-- sql=[insert into discount(Discount, Attach_Discount,Start_Time, End_Time) values ('toolbox', '<p>123</p>
+ ','1529359200', '1529445600')] --> 
+19.06.2018 01:22:24 sql=[select * from discount] 
+19.06.2018 01:23:39 sql=[select * from discount] 
+19.06.2018 01:24:12 sql=[select * from discount] 
+19.06.2018 01:24:12 <!-- sql=[insert into discount(Discount, Attach_Discount,Start_Time, End_Time) values ('toolbox111', ' ','1529532000', '1529618400')] --> 
+19.06.2018 01:24:14 sql=[select * from discount] 
+19.06.2018 01:25:33 sql=[select * from discount ] 
+19.06.2018 01:25:33 sql=[select * from discount where ID = 3] 
+19.06.2018 01:25:55 sql=[select * from discount] 
+19.06.2018 01:25:55 sql=[select * from discount ] 
+19.06.2018 01:25:55 sql=[select * from discount where ID = 3] 
+19.06.2018 01:26:57 sql=[select * from discount] 
+19.06.2018 01:26:57 <!-- sql=[update discount set Discount = 'Giờ vàng giá sốc', Attach_Discount = '<ul>
+	<li><strong>Tặng thiệp hoặc băng chữ k&egrave;m theo</strong></li>
+	<li><strong>Giảm 3% cho kh&aacute;ch h&agrave;ng đặt online với m&atilde; giảm gi&aacute; 2365</strong></li>
+	<li><strong>Giảm 5% cho kh&aacute;ch h&agrave;ng đ&atilde; đặt tại Đ</strong></li>
+</ul>
+',  Start_Time = '2018-12-05' , End_Time = '2018-12-28' where ID ='3'] --> 
+19.06.2018 01:26:57 sql=[select * from discount ] 
+19.06.2018 01:26:57 sql=[select * from discount where ID = 3] 
+19.06.2018 01:26:59 sql=[select * from discount] 
+19.06.2018 01:28:43 sql=[select * from discount ] 
+19.06.2018 01:28:43 sql=[select * from discount where ID = 3] 
+19.06.2018 01:28:56 sql=[select * from discount] 
+19.06.2018 01:28:59 sql=[select * from discount ] 
+19.06.2018 01:28:59 sql=[select * from discount where ID = 4] 
+19.06.2018 01:29:12 sql=[select * from discount] 
+19.06.2018 01:29:12 <!-- sql=[update discount set Discount = 'toolbox', Attach_Discount = '<p>123</p>
+',  Start_Time = '2018-06-20' , End_Time = '2018-06-21' where ID ='4'] --> 
+19.06.2018 01:29:12 sql=[select * from discount ] 
+19.06.2018 01:29:12 sql=[select * from discount where ID = 4] 
+19.06.2018 01:29:14 sql=[select * from discount] 
+19.06.2018 01:34:57 sql=[select * from discount] 
+19.06.2018 01:35:03 sql=[select * from discount ] 
+19.06.2018 01:35:03 sql=[select * from discount where ID = 3] 
+19.06.2018 01:35:44 sql=[select * from discount] 
+19.06.2018 01:35:44 <!-- sql=[insert into discount(Discount, Attach_Discount,Start_Time, End_Time) values ('qeqe', '<p>qeqe</p>
+ ','1529618400', '1529704800')] --> 
+19.06.2018 01:35:46 sql=[select * from discount] 
+19.06.2018 01:39:08 sql=[select * from discount] 
+19.06.2018 01:39:59 sql=[select * from discount] 
+19.06.2018 01:40:16 sql=[select * from discount] 
+19.06.2018 01:40:34 sql=[select * from discount ] 
+19.06.2018 01:40:34 sql=[select * from discount where ID = 3] 
+19.06.2018 01:40:46 sql=[select * from discount] 
+19.06.2018 01:41:41 sql=[select * from discount] 
+19.06.2018 01:42:06 sql=[select * from discount] 
+19.06.2018 01:42:33 sql=[select * from discount ] 
+19.06.2018 01:42:33 sql=[select * from discount where ID = 3] 
+19.06.2018 01:43:11 sql=[select * from discount] 
+19.06.2018 01:44:33 sql=[select * from discount] 
+19.06.2018 01:44:33 <!-- sql=[insert into discount(Discount, Attach_Discount,Start_Time, End_Time) values ('ada', ' ','2018-06-19', '2018-06-20')] --> 
+19.06.2018 01:44:35 sql=[select * from discount] 

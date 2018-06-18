@@ -26,9 +26,9 @@ $start = isset($_REQUEST["start"]) ? $_REQUEST["start"] : '';
 			$end = isset($_REQUEST["end"]) ? $_REQUEST["end"] : '';
 		
         	//echo $data['ngay_bd'];
-		    $start=strtotime($start);
-		    //echo $ngay_bd1;exit();
-		    $end=strtotime($end); 
+		    $start1=strtotime($start);
+		    //echo $start;exit();
+		    $end1=strtotime($end); 
 
 
 
@@ -37,10 +37,10 @@ $now=date("Y/m/d");
     //echo $now;exit();
     $time_now=strtotime($now);
 
-	 if($start<$time_now){
+	 if($start1<$time_now){
                 	$validate['start']="Ngày bắt đầu lớn hơn hoặc bằng ngày hiện tại!"; 
     }
-    if($end<=$start){
+    if($end1<=$start){
                 	$validate['end']="Ngày kết thúc phải lớn hơn ngày bắt đầu và ngày hiện tại!"; 
     }
 	if (count($validate)==0) {
