@@ -71,8 +71,9 @@ include("../lib_db.php");
 					}
 		$ProductName= $datas['Product_Name'];
 		$order_id = $row1['ID'];
-		$sql = "insert into detail_order(Order_ID,Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ($order_id, $id,'$ProductName',$quantity, $total)";
-		echo "Đã tạo hóa đơn thành công"; die();
+		$sql12 = "insert into detail_order(Order_ID,Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ($order_id, $id,'$ProductName',$quantity, $total)";
+		$test = exec_update($sql12);
+		echo $sql12; die();
 	
 	} 
 

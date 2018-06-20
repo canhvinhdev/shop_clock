@@ -2,6 +2,7 @@
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 $sql_order = "select * from `order` where ID = $id";
 $data_order = select_one($sql_order);
+$user = getLoggedAdmin();
 ?>
 <body class="bill_content">
 <div id="page" class="page">
@@ -69,9 +70,9 @@ $list = select_list($sql_order);
     </tr>
   </table>
   <div class="footer-left"> Hà Nội, <?php echo date("d/m/Y");?><br/>
-    Khách hàng </div>
+    Khách hàng <br/> <br/> <?php echo $data_order['Name'] ?></div>
   <div class="footer-right"> Hà Nội, <?php echo date("d/m/Y");?><br/>
-    Nhân viên </div>
+    Nhân viên <br/> <br/> <?php echo $user['User_Name']; ?></div>
 </div>
 </body>
 

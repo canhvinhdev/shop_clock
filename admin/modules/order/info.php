@@ -91,7 +91,7 @@ $list = select_list($sql_order);
 			</button>
 
 				<i class="fa fa-save"></i>
-				<button type="button" class="btn btn-success"><a href="?page=order&type=edit&id=<?php echo $data_order['ID']?> ">Cấp nhật trạng thái</a></button>
+				<button type="button" class="btn btn-success"><a href="?page=order&type=edit&id=<?php echo $data_order['ID']?> ">Cập nhật trạng thái</a></button>
 		
 	</div>
 </div>

@@ -187,3 +187,51 @@
 09.06.2018 02:08:02 <!-- sql=[update `order`  set Order_Status = '1' where ID = '42'] --> 
 09.06.2018 02:08:15 <!-- sql=[update `order`  set Order_Status = '1' where ID = '41'] --> 
 09.06.2018 02:08:19 <!-- sql=[update `order`  set Order_Status = '1' where ID = '39'] --> 
+20.06.2018 01:36:59 sql=[select * from product where ID = 19] 
+20.06.2018 01:36:59 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 01:36:59 sql=[select * from product where ID = 18] 
+20.06.2018 01:36:59 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 18 ] 
+20.06.2018 01:36:59 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('nguyen canh vinh', '0984009503 ','123456', curdate(),5600000)] --> 
+20.06.2018 01:36:59 sql=[select * from `order` order by ID desc] 
+20.06.2018 01:36:59 sql=[select * from product where ID = 19] 
+20.06.2018 01:36:59 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:10:48 <!-- sql=[update `order`  set Order_Status = '1' where ID = '57'] --> 
+20.06.2018 02:10:48 sql=[select * from detail_order where Order_ID = '57'] 
+20.06.2018 02:10:48 <!-- sql=[UPDATE product set Quantity= Quantity-'1' where ID =8] --> 
+20.06.2018 02:36:05 sql=[select * from product where ID = 19] 
+20.06.2018 02:36:05 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:36:05 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('2222', '2222 ','222', curdate(),2900000)] --> 
+20.06.2018 02:36:05 sql=[select * from `order` order by ID desc] 
+20.06.2018 02:36:05 sql=[select * from product where ID = 19] 
+20.06.2018 02:36:05 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:37:23 sql=[select * from product where ID = 19] 
+20.06.2018 02:37:23 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:37:23 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('1', '1 ','1', curdate(),2900000)] --> 
+20.06.2018 02:37:23 sql=[select * from `order` order by ID desc] 
+20.06.2018 02:37:23 sql=[select * from product where ID = 19] 
+20.06.2018 02:37:23 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:38:46 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('2', '2 ','21', curdate(),0)] --> 
+20.06.2018 02:38:46 sql=[select * from `order` order by ID desc] 
+20.06.2018 02:40:09 sql=[select * from product where ID = 19] 
+20.06.2018 02:40:09 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:40:09 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('4', '4 ','4', curdate(),2900000)] --> 
+20.06.2018 02:40:09 sql=[select * from `order` order by ID desc] 
+20.06.2018 02:40:09 sql=[select * from product where ID = 19] 
+20.06.2018 02:40:09 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:40:09 <!-- sql=[insert into detail_order(Order_ID,Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values (62, 19,'BABY-G BA-110-1A Black Gold',1, 2900000)] --> 
+20.06.2018 02:42:16 sql=[select * from product where ID = 19] 
+20.06.2018 02:42:16 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:42:16 sql=[select * from product where ID = 18] 
+20.06.2018 02:42:16 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 18 ] 
+20.06.2018 02:42:16 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('12', '12 ','12', curdate(),5600000)] --> 
+20.06.2018 02:42:16 sql=[select * from `order` order by ID desc] 
+20.06.2018 02:42:16 sql=[select * from product where ID = 19] 
+20.06.2018 02:42:16 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:42:16 <!-- sql=[insert into detail_order(Order_ID,Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values (63, 19,'BABY-G BA-110-1A Black Gold',1, 2900000)] --> 
+20.06.2018 02:43:34 sql=[select * from product where ID = 19] 
+20.06.2018 02:43:34 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:43:34 <!-- sql=[insert into `order`(Name, Moblie_Number,Shipping_Address,Order_Time,Subtotal) values ('13', '13 ','13', curdate(),2900000)] --> 
+20.06.2018 02:43:34 sql=[select * from `order` order by ID desc] 
+20.06.2018 02:43:34 sql=[select * from product where ID = 19] 
+20.06.2018 02:43:34 sql=[select * from discount inner join discountproduct on discount.ID = discountproduct.Discount_ID where discountproduct.Product_ID = 19 ] 
+20.06.2018 02:43:34 <!-- sql=[insert into detail_order(Order_ID,Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values (64, 19,'BABY-G BA-110-1A Black Gold',1, 2900000)] --> 

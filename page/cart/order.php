@@ -403,9 +403,9 @@ if($user){
 													$results=exec_update($sql_detail);
 
 
-														$sqlsl="UPDATE product set Quantity='{$soluongspconlai}' where ID =$Product_ID";
+														//$sqlsl="UPDATE product set Quantity= Quantity-'{$soluongspconlai}' where ID =$Product_ID";
 			
-														$resultsl2 = exec_update($sqlsl);
+														//$resultsl2 = exec_update($sqlsl);
 
 
 												}
