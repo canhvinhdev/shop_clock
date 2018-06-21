@@ -73,7 +73,7 @@ include("../lib_db.php");
 		$order_id = $row1['ID'];
 		$sql12 = "insert into detail_order(Order_ID,Product_ID,ProductName_DetailOrder, Quantity_DetailOrder,Price_DetailOrder) values ($order_id, $id,'$ProductName',$quantity, $total)";
 		$test = exec_update($sql12);
-		echo $sql12; die();
+		echo "bạn đã tạo hóa đoen thành công";die();
 	
 	} 
 
